@@ -1,0 +1,43 @@
+//
+//  API_BASE_URL.h
+//  mymercedes
+//
+//  Created by Александр Кулабухов on 15/09/16.
+//  Copyright © 2016 Daimler AG. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+
+#ifdef IS_SERVER_TEST
+static BOOL const TEST_SERVER = YES;
+#else
+static BOOL const TEST_SERVER = NO;
+#endif
+
+typedef enum : NSUInteger {
+    API_PROJECT_IDENTITY_SERVER = 0,
+    API_PROJECT_MOBILE_APP_CMS,
+    API_PROJECT_ECF,
+    API_PROJECT_ECF_IDENTITY,
+    API_PROJECT_USED,
+    API_PROJECT_TEST_DRIVE,
+    API_PROJECT_TEST_DRIVE_MOBILE_STARS,
+    API_PROJECT_DEALERS,
+    API_PROJECT_SERVICE,
+    API_PROJECT_PARTS_PRICE,
+    API_PROJECT_SERVICE_CERTIFICATE,
+    API_PROJECT_SERVICE_PRICE,
+    API_PROJECT_PROGRAM_3_PLUS,
+    API_PROJECT_RCF_FEEDBACK,
+    API_PROJECT_OCR,
+    API_PROJECT_PROGRAM_LOYALITY,
+    API_PROJECT_CONTACTS_DB,
+    API_PROJECT_MY_AMG,
+    API_PROJECTS_COUNT
+} API_PROJECT;
+
+@interface API_BASE_URL : NSProxy
+
++(NSString *)baseUrlForProject:(API_PROJECT)project;
+
+@end

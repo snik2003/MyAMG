@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="DaimlerCA-Regular.ttf">
+            <string>DaimlerCA-Regular</string>
+        </array>
+        <array key="DaimlerCS-Demi.ttf">
+            <string>DaimlerCS-Demi</string>
+        </array>
+        <array key="DaimlerCS-Regular.ttf">
+            <string>DaimlerCS-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SertificateOrderViewController" customModule="MyAMG" customModuleProvider="target">
+            <connections>
+                <outlet property="backButton" destination="xoj-D4-HT0" id="2fl-pE-rxd"/>
+                <outlet property="cityCell" destination="Dcl-AH-huX" id="0AI-3f-yAa"/>
+                <outlet property="cityLabel" destination="WFh-ms-jXr" id="CQn-R9-wyG"/>
+                <outlet property="closeButton" destination="DME-lv-FM3" id="YeB-DN-MGK"/>
+                <outlet property="confirmOnlineServicesLabel" destination="rKW-No-IKt" id="yWZ-ni-LUU"/>
+                <outlet property="dealerCell" destination="NVt-rq-Q2D" id="TOa-cV-oRP"/>
+                <outlet property="dealerLabel" destination="AY2-Va-n24" id="yWC-TQ-Ff6"/>
+                <outlet property="emailCell" destination="ZGR-p0-6Bn" id="aFH-rg-ToK"/>
+                <outlet property="emailTextField" destination="XoP-Bs-QRO" id="wg9-DU-COs"/>
+                <outlet property="emptyCell" destination="XSJ-Au-Dd0" id="Cdb-jx-K3k"/>
+                <outlet property="firstNameCell" destination="wto-Eu-hIK" id="boG-dj-2uA"/>
+                <outlet property="firstNameTextField" destination="eK3-L7-1QI" id="QuV-Aq-b5b"/>
+                <outlet property="lastNameCell" destination="3yY-T0-THb" id="lO0-hB-7xB"/>
+                <outlet property="lastNameTextField" destination="gSf-or-bH0" id="Vv8-Gr-bPU"/>
+                <outlet property="mainView" destination="H2i-7B-lLh" id="aFS-c3-lsB"/>
+                <outlet property="orderCell" destination="Mwk-KR-Oi7" id="NAQ-w6-brj"/>
+                <outlet property="periodLabel" destination="CDO-D1-vCY" id="xbo-gl-7yj"/>
+                <outlet property="phoneCell" destination="pch-bJ-S6T" id="H94-AL-IcB"/>
+                <outlet property="phoneTextField" destination="2Nw-3r-e0l" id="NZU-eA-UW4"/>
+                <outlet property="priceLabel" destination="NdF-Tj-bxt" id="GxT-ed-QvQ"/>
+                <outlet property="regnumCell" destination="yDC-7a-o3y" id="Im9-Jx-ijF"/>
+                <outlet property="regnumTextField" destination="glU-Cz-Ki7" id="l2q-X5-UA1"/>
+                <outlet property="sertLabel" destination="qaX-vt-noC" id="XZN-Uh-Scs"/>
+                <outlet property="tableView" destination="IKS-qs-ROf" id="iW1-Gw-KSn"/>
+                <outlet property="titleLabel" destination="Nzx-pT-tnr" id="VCR-wU-UmT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vinCell" destination="lmP-ie-pAP" id="F3a-04-fIC"/>
+                <outlet property="vinTextField" destination="pj5-R0-lOX" id="4rH-N7-zBd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2i-7B-lLh">
+                    <rect key="frame" x="0.0" y="60" width="414" height="836"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nzx-pT-tnr">
+                            <rect key="frame" x="60" y="10" width="294" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="9hg-mv-gRJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DaimlerCS-Demi" family="Daimler CS" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DME-lv-FM3">
+                            <rect key="frame" x="362" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="PlO-pH-JJd"/>
+                                <constraint firstAttribute="width" constant="40" id="YyG-5l-Pnu"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                            <state key="normal" image="close"/>
+                            <connections>
+                                <action selector="closeButtonActionWithSender:" destination="-1" eventType="touchUpInside" id="qea-vg-C9Z"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xoj-D4-HT0">
+                            <rect key="frame" x="6" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="FzV-eD-yla"/>
+                                <constraint firstAttribute="height" constant="40" id="NHb-SS-P0l"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="14" minY="10" maxX="14" maxY="10"/>
+                            <state key="normal" image="leftArrow"/>
+                            <connections>
+                                <action selector="backButtonActionWithSender:" destination="-1" eventType="touchUpInside" id="VCZ-jI-raH"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaX-vt-noC">
+                            <rect key="frame" x="20" y="60" width="374" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="BE7-bj-HWX"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DaimlerCA-Regular" family="Daimler CA" pointSize="24"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Модель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="NdF-Tj-bxt">
+                            <rect key="frame" x="20" y="108" width="374" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="aiU-q8-8ej"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="18"/>
+                            <color key="textColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Срок: 2 ТО" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CDO-D1-vCY">
+                            <rect key="frame" x="20" y="140" width="374" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Dan-Px-teA"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="18"/>
+                            <color key="textColor" white="0.0" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="IKS-qs-ROf">
+                            <rect key="frame" x="0.0" y="179" width="414" height="647"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="QlH-HI-EbZ"/>
+                                <outlet property="delegate" destination="-1" id="iGf-lO-SnQ"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="CDO-D1-vCY" secondAttribute="trailing" constant="20" id="1FO-d3-nub"/>
+                        <constraint firstItem="CDO-D1-vCY" firstAttribute="leading" secondItem="H2i-7B-lLh" secondAttribute="leading" constant="20" id="9N5-UR-EX0"/>
+                        <constraint firstAttribute="trailing" secondItem="qaX-vt-noC" secondAttribute="trailing" constant="20" id="GgF-D2-FkY"/>
+                        <constraint firstItem="IKS-qs-ROf" firstAttribute="top" secondItem="CDO-D1-vCY" secondAttribute="bottom" constant="15" id="MTX-yB-LEL"/>
+                        <constraint firstAttribute="bottom" secondItem="IKS-qs-ROf" secondAttribute="bottom" constant="10" id="Mgd-e5-1fw"/>
+                        <constraint firstItem="xoj-D4-HT0" firstAttribute="leading" secondItem="H2i-7B-lLh" secondAttribute="leading" constant="6" id="Mhm-10-2Gu"/>
+                        <constraint firstAttribute="trailing" secondItem="DME-lv-FM3" secondAttribute="trailing" constant="12" id="Mzh-vD-LEG"/>
+                        <constraint firstItem="NdF-Tj-bxt" firstAttribute="leading" secondItem="H2i-7B-lLh" secondAttribute="leading" constant="20" id="Yua-a3-D9E"/>
+                        <constraint firstItem="xoj-D4-HT0" firstAttribute="centerY" secondItem="Nzx-pT-tnr" secondAttribute="centerY" id="ays-8g-gmc"/>
+                        <constraint firstAttribute="trailing" secondItem="IKS-qs-ROf" secondAttribute="trailing" id="cqI-25-l5g"/>
+                        <constraint firstItem="qaX-vt-noC" firstAttribute="leading" secondItem="H2i-7B-lLh" secondAttribute="leading" constant="20" id="ejv-KJ-IfH"/>
+                        <constraint firstItem="DME-lv-FM3" firstAttribute="centerY" secondItem="Nzx-pT-tnr" secondAttribute="centerY" id="ey5-KV-2PP"/>
+                        <constraint firstAttribute="trailing" secondItem="Nzx-pT-tnr" secondAttribute="trailing" constant="60" id="gp8-ua-M9v"/>
+                        <constraint firstItem="CDO-D1-vCY" firstAttribute="top" secondItem="NdF-Tj-bxt" secondAttribute="bottom" constant="8" id="j64-h2-xQ8"/>
+                        <constraint firstItem="Nzx-pT-tnr" firstAttribute="leading" secondItem="H2i-7B-lLh" secondAttribute="leading" constant="60" id="lHw-Pk-ZMc"/>
+                        <constraint firstItem="qaX-vt-noC" firstAttribute="top" secondItem="H2i-7B-lLh" secondAttribute="top" constant="60" id="mJP-sR-y6C"/>
+                        <constraint firstItem="IKS-qs-ROf" firstAttribute="leading" secondItem="H2i-7B-lLh" secondAttribute="leading" id="okS-tA-T79"/>
+                        <constraint firstItem="Nzx-pT-tnr" firstAttribute="top" secondItem="H2i-7B-lLh" secondAttribute="top" constant="10" id="u9A-1a-Qrg"/>
+                        <constraint firstAttribute="trailing" secondItem="NdF-Tj-bxt" secondAttribute="trailing" constant="20" id="uPs-7j-Ejo"/>
+                        <constraint firstItem="NdF-Tj-bxt" firstAttribute="top" secondItem="qaX-vt-noC" secondAttribute="bottom" constant="8" id="wQM-A0-p4C"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="H2i-7B-lLh" secondAttribute="bottom" id="1dK-Cl-31O"/>
+                <constraint firstAttribute="trailing" secondItem="H2i-7B-lLh" secondAttribute="trailing" id="242-8m-dd5"/>
+                <constraint firstItem="H2i-7B-lLh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OdS-nh-iES"/>
+                <constraint firstItem="H2i-7B-lLh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="60" id="rn0-rt-Xnr"/>
+            </constraints>
+        </view>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="emailCell" id="ZGR-p0-6Bn" customClass="AMGTableViewCell" customModule="MyAMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ZGR-p0-6Bn" id="1e5-5P-97F">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABx-K6-crc">
+                        <rect key="frame" x="20" y="0.0" width="37.5" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="0G3-Tb-xVC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Обязательно" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="XoP-Bs-QRO">
+                        <rect key="frame" x="140" y="0.0" width="254" height="48"/>
+                        <color key="tintColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="Rt5-y5-ou5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="light" returnKeyType="next" textContentType="email"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLK-Na-jOD">
+                        <rect key="frame" x="20" y="47" width="394" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="YGE-Kb-KOJ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Укажите Ваш email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daG-ZN-8rS">
+                        <rect key="frame" x="20" y="56" width="109.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="WhZ-CM-aPn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="14"/>
+                        <color key="textColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="XoP-Bs-QRO" secondAttribute="trailing" constant="20" id="3sO-id-eHl"/>
+                    <constraint firstItem="XoP-Bs-QRO" firstAttribute="centerY" secondItem="ABx-K6-crc" secondAttribute="centerY" id="42K-uE-0hc"/>
+                    <constraint firstItem="ABx-K6-crc" firstAttribute="leading" secondItem="1e5-5P-97F" secondAttribute="leading" constant="20" id="HAv-GI-Xnq"/>
+                    <constraint firstItem="ZLK-Na-jOD" firstAttribute="leading" secondItem="1e5-5P-97F" secondAttribute="leading" constant="20" id="Md2-JV-KJl"/>
+                    <constraint firstItem="ABx-K6-crc" firstAttribute="top" secondItem="1e5-5P-97F" secondAttribute="top" id="Pp7-fP-siE"/>
+                    <constraint firstItem="ZLK-Na-jOD" firstAttribute="width" secondItem="1e5-5P-97F" secondAttribute="width" constant="-20" id="lys-Ix-cyR"/>
+                    <constraint firstItem="daG-ZN-8rS" firstAttribute="leading" secondItem="1e5-5P-97F" secondAttribute="leading" constant="20" id="pBP-tc-eFT"/>
+                    <constraint firstItem="ZLK-Na-jOD" firstAttribute="top" secondItem="ABx-K6-crc" secondAttribute="bottom" constant="-1" id="quJ-NT-wVx"/>
+                    <constraint firstItem="daG-ZN-8rS" firstAttribute="top" secondItem="ABx-K6-crc" secondAttribute="bottom" constant="8" id="vF4-1h-poy"/>
+                    <constraint firstItem="XoP-Bs-QRO" firstAttribute="leading" secondItem="1e5-5P-97F" secondAttribute="leading" constant="140" id="zCu-DG-hUj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="728" y="526"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="vinCell" id="lmP-ie-pAP" customClass="AMGTableViewCell" customModule="MyAMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lmP-ie-pAP" id="XUS-Rr-8Wv">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8a8-hf-Las">
+                        <rect key="frame" x="20" y="0.0" width="374" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="lSN-au-8wB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Обязательно" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pj5-R0-lOX">
+                        <rect key="frame" x="140" y="0.0" width="224" height="48"/>
+                        <color key="tintColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="jfm-MY-g65"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" keyboardAppearance="light" returnKeyType="next" smartInsertDeleteType="no"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gW7-dX-doF">
+                        <rect key="frame" x="20" y="47" width="394" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="AOY-aZ-6sZ"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VIN можно заполнить вручную или отсканировать со стекла или двери автомобиля" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTR-t0-K7v">
+                        <rect key="frame" x="20" y="58" width="374" height="28"/>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="14"/>
+                        <color key="textColor" red="0.54901960780000003" green="0.54901960780000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gW7-dX-doF" firstAttribute="width" secondItem="XUS-Rr-8Wv" secondAttribute="width" constant="-20" id="0Cg-cm-7T6"/>
+                    <constraint firstAttribute="trailing" secondItem="pj5-R0-lOX" secondAttribute="trailing" constant="50" id="16j-4h-3iY"/>
+                    <constraint firstItem="gW7-dX-doF" firstAttribute="leading" secondItem="XUS-Rr-8Wv" secondAttribute="leading" constant="20" id="2z7-fU-Eou"/>
+                    <constraint firstItem="gW7-dX-doF" firstAttribute="top" secondItem="8a8-hf-Las" secondAttribute="bottom" constant="-1" id="4q0-64-qoW"/>
+                    <constraint firstAttribute="trailing" secondItem="8a8-hf-Las" secondAttribute="trailing" constant="20" id="9LC-Vl-fNZ"/>
+                    <constraint firstItem="pj5-R0-lOX" firstAttribute="centerY" secondItem="8a8-hf-Las" secondAttribute="centerY" id="AJG-py-Na5"/>
+                    <constraint firstAttribute="trailing" secondItem="wTR-t0-K7v" secondAttribute="trailing" constant="20" id="Anw-ck-O6u"/>
+                    <constraint firstItem="wTR-t0-K7v" firstAttribute="leading" secondItem="XUS-Rr-8Wv" secondAttribute="leading" constant="20" id="Fku-3l-Z6p"/>
+                    <constraint firstItem="wTR-t0-K7v" firstAttribute="top" secondItem="pj5-R0-lOX" secondAttribute="bottom" constant="10" id="Pxe-C0-ojN"/>
+                    <constraint firstItem="8a8-hf-Las" firstAttribute="leading" secondItem="XUS-Rr-8Wv" secondAttribute="leading" constant="20" id="X39-uY-QVW"/>
+                    <constraint firstItem="8a8-hf-Las" firstAttribute="top" secondItem="XUS-Rr-8Wv" secondAttribute="top" id="xOF-yV-VYd"/>
+                    <constraint firstItem="pj5-R0-lOX" firstAttribute="leading" secondItem="XUS-Rr-8Wv" secondAttribute="leading" constant="140" id="xaE-CE-vFh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="728" y="-198"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="lastNameCell" id="3yY-T0-THb" customClass="AMGTableViewCell" customModule="MyAMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3yY-T0-THb" id="9k7-Pr-w6u">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p75-mM-Cdj">
+                        <rect key="frame" x="20" y="0.0" width="64" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="mNj-cv-472"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Обязательно" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-or-bH0">
+                        <rect key="frame" x="140" y="0.0" width="254" height="48"/>
+                        <color key="tintColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="spi-9n-v92"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" keyboardAppearance="light" returnKeyType="next" textContentType="family-name"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqZ-SV-bRb">
+                        <rect key="frame" x="20" y="47" width="394" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ccY-E3-lIX"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Укажите Вашу фамилию" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Blm-Pw-UBB">
+                        <rect key="frame" x="20" y="56" width="140.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="G4s-Cv-Nms"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="14"/>
+                        <color key="textColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="gSf-or-bH0" firstAttribute="leading" secondItem="9k7-Pr-w6u" secondAttribute="leading" constant="140" id="0g7-oR-Nem"/>
+                    <constraint firstItem="p75-mM-Cdj" firstAttribute="leading" secondItem="9k7-Pr-w6u" secondAttribute="leading" constant="20" id="28X-p8-4bF"/>
+                    <constraint firstItem="OqZ-SV-bRb" firstAttribute="leading" secondItem="9k7-Pr-w6u" secondAttribute="leading" constant="20" id="467-3R-LnY"/>
+                    <constraint firstAttribute="trailing" secondItem="gSf-or-bH0" secondAttribute="trailing" constant="20" id="6KG-Kw-uTi"/>
+                    <constraint firstItem="OqZ-SV-bRb" firstAttribute="width" secondItem="9k7-Pr-w6u" secondAttribute="width" constant="-20" id="Weg-NK-6bd"/>
+                    <constraint firstItem="gSf-or-bH0" firstAttribute="centerY" secondItem="p75-mM-Cdj" secondAttribute="centerY" id="Yh6-gc-quU"/>
+                    <constraint firstItem="p75-mM-Cdj" firstAttribute="top" secondItem="9k7-Pr-w6u" secondAttribute="top" id="ndU-dE-f5Q"/>
+                    <constraint firstItem="OqZ-SV-bRb" firstAttribute="top" secondItem="p75-mM-Cdj" secondAttribute="bottom" constant="-1" id="sJU-oa-cqh"/>
+                    <constraint firstItem="Blm-Pw-UBB" firstAttribute="leading" secondItem="9k7-Pr-w6u" secondAttribute="leading" constant="20" id="uN8-zL-J2T"/>
+                    <constraint firstItem="Blm-Pw-UBB" firstAttribute="top" secondItem="p75-mM-Cdj" secondAttribute="bottom" constant="8" id="yiC-mM-rsp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="728" y="77"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="firstNameCell" id="wto-Eu-hIK" customClass="AMGTableViewCell" customModule="MyAMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wto-Eu-hIK" id="Zxa-wv-AZJ">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro2-Bu-KY7">
+                        <rect key="frame" x="20" y="0.0" width="29.5" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="1a4-k3-upx"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Обязательно" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eK3-L7-1QI">
+                        <rect key="frame" x="140" y="0.0" width="254" height="48"/>
+                        <color key="tintColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="ObG-or-hau"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" keyboardAppearance="light" returnKeyType="next" textContentType="given-name"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDT-96-Q20">
+                        <rect key="frame" x="20" y="47" width="394" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="jrh-o5-r6z"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Укажите Ваше имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11j-dG-WfW">
+                        <rect key="frame" x="20" y="56" width="108" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="UWx-vA-fQr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="14"/>
+                        <color key="textColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VDT-96-Q20" firstAttribute="leading" secondItem="Zxa-wv-AZJ" secondAttribute="leading" constant="20" id="4rM-K3-wd3"/>
+                    <constraint firstAttribute="trailing" secondItem="eK3-L7-1QI" secondAttribute="trailing" constant="20" id="DMP-mU-ttf"/>
+                    <constraint firstItem="VDT-96-Q20" firstAttribute="top" secondItem="Ro2-Bu-KY7" secondAttribute="bottom" constant="-1" id="FYE-33-Kd7"/>
+                    <constraint firstItem="Ro2-Bu-KY7" firstAttribute="leading" secondItem="Zxa-wv-AZJ" secondAttribute="leading" constant="20" id="JbX-FK-jMe"/>
+                    <constraint firstItem="11j-dG-WfW" firstAttribute="leading" secondItem="Zxa-wv-AZJ" secondAttribute="leading" constant="20" id="e1n-Z1-LJZ"/>
+                    <constraint firstItem="eK3-L7-1QI" firstAttribute="centerY" secondItem="Ro2-Bu-KY7" secondAttribute="centerY" id="edV-tq-n69"/>
+                    <constraint firstItem="Ro2-Bu-KY7" firstAttribute="top" secondItem="Zxa-wv-AZJ" secondAttribute="top" id="ggK-Jv-8R3"/>
+                    <constraint firstItem="11j-dG-WfW" firstAttribute="top" secondItem="Ro2-Bu-KY7" secondAttribute="bottom" constant="8" id="m0N-uW-gLw"/>
+                    <constraint firstItem="VDT-96-Q20" firstAttribute="width" secondItem="Zxa-wv-AZJ" secondAttribute="width" constant="-20" id="mRS-Qa-hD6"/>
+                    <constraint firstItem="eK3-L7-1QI" firstAttribute="leading" secondItem="Zxa-wv-AZJ" secondAttribute="leading" constant="140" id="xcd-zk-grs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="728" y="163"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="phoneCell" id="pch-bJ-S6T" customClass="AMGTableViewCell" customModule="MyAMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pch-bJ-S6T" id="OZN-VW-ALS">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Телефон" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZMS-C4-gel">
+                        <rect key="frame" x="20" y="0.0" width="61" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="Kwg-dx-Qes"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="+7 " placeholder="Обязательно" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Nw-3r-e0l" customClass="MMFormPhoneTextField">
+                        <rect key="frame" x="140" y="0.0" width="254" height="48"/>
+                        <color key="tintColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="yBa-wK-fdz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" keyboardType="numbersAndPunctuation" keyboardAppearance="light" returnKeyType="next" textContentType="tel"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="an6-pP-Mfq">
+                        <rect key="frame" x="20" y="47" width="394" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="gaB-Z8-bo7"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Укажите Ваш телефон" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vSq-gE-bPF">
+                        <rect key="frame" x="20" y="56" width="128" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="kbj-kE-hsr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="14"/>
+                        <color key="textColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vSq-gE-bPF" firstAttribute="top" secondItem="ZMS-C4-gel" secondAttribute="bottom" constant="8" id="58E-LF-x0Y"/>
+                    <constraint firstItem="an6-pP-Mfq" firstAttribute="leading" secondItem="OZN-VW-ALS" secondAttribute="leading" constant="20" id="CwO-Kc-7Mv"/>
+                    <constraint firstItem="vSq-gE-bPF" firstAttribute="leading" secondItem="OZN-VW-ALS" secondAttribute="leading" constant="20" id="FV9-Nq-kQP"/>
+                    <constraint firstItem="ZMS-C4-gel" firstAttribute="leading" secondItem="OZN-VW-ALS" secondAttribute="leading" constant="20" id="RMB-LI-FHh"/>
+                    <constraint firstItem="ZMS-C4-gel" firstAttribute="top" secondItem="OZN-VW-ALS" secondAttribute="top" id="V3g-HD-wex"/>
+                    <constraint firstItem="2Nw-3r-e0l" firstAttribute="centerY" secondItem="ZMS-C4-gel" secondAttribute="centerY" id="VR9-3d-aNS"/>
+                    <constraint firstAttribute="trailing" secondItem="2Nw-3r-e0l" secondAttribute="trailing" constant="20" id="WyC-CN-0y2"/>
+                    <constraint firstItem="2Nw-3r-e0l" firstAttribute="leading" secondItem="OZN-VW-ALS" secondAttribute="leading" constant="140" id="YeV-kG-3Vq"/>
+                    <constraint firstItem="an6-pP-Mfq" firstAttribute="width" secondItem="OZN-VW-ALS" secondAttribute="width" constant="-20" id="a6X-PN-r3S"/>
+                    <constraint firstItem="an6-pP-Mfq" firstAttribute="top" secondItem="ZMS-C4-gel" secondAttribute="bottom" constant="-1" id="zr8-lT-b5H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="728" y="436"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="emptyCell" id="XSJ-Au-Dd0">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XSJ-Au-Dd0" id="UOj-Vm-fbL">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="47.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="687" y="-65"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="dealerCell" id="NVt-rq-Q2D" customClass="AMGTableViewCell" customModule="MyAMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NVt-rq-Q2D" id="9Q3-s9-HaM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mLl-0p-0jr">
+                        <rect key="frame" x="20" y="0.0" width="374" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="SMy-FS-Ml7"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дилер" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwi-t6-rmF">
+                        <rect key="frame" x="20" y="0.0" width="44" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="00G-YL-GBa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите дилера" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="AY2-Va-n24">
+                        <rect key="frame" x="120" y="0.0" width="259" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="s5K-jt-IfG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="iDm-KQ-IxJ">
+                        <rect key="frame" x="386" y="17.5" width="8" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="6I6-qn-YB4"/>
+                            <constraint firstAttribute="height" constant="13" id="K6H-SM-VOg"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YLU-jC-47w">
+                        <rect key="frame" x="20" y="47" width="394" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Qsh-00-Tw4"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите дилера" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yeS-2S-p2p">
+                        <rect key="frame" x="20" y="56" width="101" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="l3S-JX-abO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="14"/>
+                        <color key="textColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iDm-KQ-IxJ" firstAttribute="centerY" secondItem="mLl-0p-0jr" secondAttribute="centerY" id="6YI-tC-2Kf"/>
+                    <constraint firstItem="YLU-jC-47w" firstAttribute="leading" secondItem="9Q3-s9-HaM" secondAttribute="leading" constant="20" id="FUk-4C-QGu"/>
+                    <constraint firstItem="YLU-jC-47w" firstAttribute="width" secondItem="9Q3-s9-HaM" secondAttribute="width" constant="-20" id="G7W-L8-Pea"/>
+                    <constraint firstAttribute="trailing" secondItem="mLl-0p-0jr" secondAttribute="trailing" constant="20" id="GIr-lM-4mv"/>
+                    <constraint firstItem="AY2-Va-n24" firstAttribute="leading" secondItem="mLl-0p-0jr" secondAttribute="leading" constant="100" id="IUY-H5-h93"/>
+                    <constraint firstItem="cwi-t6-rmF" firstAttribute="leading" secondItem="9Q3-s9-HaM" secondAttribute="leading" constant="20" id="IWg-ko-6fR"/>
+                    <constraint firstItem="iDm-KQ-IxJ" firstAttribute="trailing" secondItem="mLl-0p-0jr" secondAttribute="trailing" id="J2H-MF-jK4"/>
+                    <constraint firstItem="yeS-2S-p2p" firstAttribute="leading" secondItem="9Q3-s9-HaM" secondAttribute="leading" constant="20" id="JSA-R7-5VH"/>
+                    <constraint firstItem="yeS-2S-p2p" firstAttribute="top" secondItem="cwi-t6-rmF" secondAttribute="bottom" constant="8" id="LkL-mj-zzh"/>
+                    <constraint firstItem="cwi-t6-rmF" firstAttribute="centerY" secondItem="mLl-0p-0jr" secondAttribute="centerY" id="NCt-G9-9GC"/>
+                    <constraint firstItem="mLl-0p-0jr" firstAttribute="leading" secondItem="9Q3-s9-HaM" secondAttribute="leading" constant="20" id="RqE-3h-McE"/>
+                    <constraint firstItem="mLl-0p-0jr" firstAttribute="top" secondItem="9Q3-s9-HaM" secondAttribute="top" id="c0N-Qd-jTs"/>
+                    <constraint firstItem="AY2-Va-n24" firstAttribute="trailing" secondItem="mLl-0p-0jr" secondAttribute="trailing" constant="-15" id="c2g-Ke-DAr"/>
+                    <constraint firstItem="AY2-Va-n24" firstAttribute="centerY" secondItem="mLl-0p-0jr" secondAttribute="centerY" id="gcg-d9-Pi3"/>
+                    <constraint firstItem="YLU-jC-47w" firstAttribute="top" secondItem="cwi-t6-rmF" secondAttribute="bottom" constant="-1" id="ytW-gy-TB7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="777" y="501"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="cityCell" id="Dcl-AH-huX" customClass="AMGTableViewCell" customModule="MyAMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dcl-AH-huX" id="Yzp-3W-7jd">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="97.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3u8-8A-X8b">
+                        <rect key="frame" x="20" y="0.0" width="374" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="u2I-o3-Yhj"/>
+                        </constraints>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Город" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rkf-Q3-Twq">
+                        <rect key="frame" x="20" y="0.0" width="42" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="ag7-xO-R0G"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите город" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="WFh-ms-jXr">
+                        <rect key="frame" x="120" y="0.0" width="259" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="F8V-f1-IzF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="16"/>
+                        <color key="textColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="cVp-yZ-IKT">
+                        <rect key="frame" x="386" y="17.5" width="8" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="cYr-vj-T81"/>
+                            <constraint firstAttribute="height" constant="13" id="ody-zv-h2O"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hoP-SK-s2D">
+                        <rect key="frame" x="20" y="47" width="394" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="qRS-8Q-Yv3"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Выберите город" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s9U-8j-3uV">
+                        <rect key="frame" x="20" y="56" width="93" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="vMn-5w-SR0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="14"/>
+                        <color key="textColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="3u8-8A-X8b" firstAttribute="top" secondItem="Yzp-3W-7jd" secondAttribute="top" id="164-9r-Sgf"/>
+                    <constraint firstItem="WFh-ms-jXr" firstAttribute="trailing" secondItem="3u8-8A-X8b" secondAttribute="trailing" constant="-15" id="17y-rY-rcS"/>
+                    <constraint firstItem="rkf-Q3-Twq" firstAttribute="centerY" secondItem="3u8-8A-X8b" secondAttribute="centerY" id="AEr-Hx-Mix"/>
+                    <constraint firstItem="cVp-yZ-IKT" firstAttribute="centerY" secondItem="3u8-8A-X8b" secondAttribute="centerY" id="B1H-do-by2"/>
+                    <constraint firstItem="hoP-SK-s2D" firstAttribute="width" secondItem="Yzp-3W-7jd" secondAttribute="width" constant="-20" id="Jlf-tk-Rfx"/>
+                    <constraint firstItem="rkf-Q3-Twq" firstAttribute="leading" secondItem="Yzp-3W-7jd" secondAttribute="leading" constant="20" id="XoW-h9-RVX"/>
+                    <constraint firstAttribute="trailing" secondItem="3u8-8A-X8b" secondAttribute="trailing" constant="20" id="Ygf-Lp-RPi"/>
+                    <constraint firstItem="hoP-SK-s2D" firstAttribute="top" secondItem="rkf-Q3-Twq" secondAttribute="bottom" constant="-1" id="btQ-wq-OIg"/>
+                    <constraint firstItem="cVp-yZ-IKT" firstAttribute="trailing" secondItem="3u8-8A-X8b" secondAttribute="trailing" id="cLt-WM-MpY"/>
+                    <constraint firstItem="WFh-ms-jXr" firstAttribute="centerY" secondItem="3u8-8A-X8b" secondAttribute="centerY" id="mD6-Ce-Gq7"/>
+                    <constraint firstItem="WFh-ms-jXr" firstAttribute="leading" secondItem="3u8-8A-X8b" secondAttribute="leading" constant="100" id="mDr-A1-S0m"/>
+                    <constraint firstItem="s9U-8j-3uV" firstAttribute="top" secondItem="rkf-Q3-Twq" secondAttribute="bottom" constant="8" id="oY5-Fi-bdJ"/>
+                    <constraint firstItem="hoP-SK-s2D" firstAttribute="leading" secondItem="Yzp-3W-7jd" secondAttribute="leading" constant="20" id="pQ6-Jj-buY"/>
+                    <constraint firstItem="3u8-8A-X8b" firstAttribute="leading" secondItem="Yzp-3W-7jd" secondAttribute="leading" constant="20" id="rJM-2c-0K4"/>
+                    <constraint firstItem="s9U-8j-3uV" firstAttribute="leading" secondItem="Yzp-3W-7jd" secondAttribute="leading" constant="20" id="uyu-zJ-bBH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="777" y="413"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="nextCell" id="Mwk-KR-Oi7">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Mwk-KR-Oi7" id="0Aa-aH-ec9">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="139.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y3W-IK-NPY" customClass="AMGButton" customModule="MyAMG" customModuleProvider="target">
+                        <rect key="frame" x="50" y="60" width="314" height="50"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="nUB-gI-HTk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Demi" family="Daimler CS" pointSize="18"/>
+                        <state key="normal" title="Отправить">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="fillColor">
+                                <color key="value" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="margin">
+                                <real key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="sendOrder" destination="-1" eventType="touchUpInside" id="M2A-QN-AH0"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKW-No-IKt">
+                        <rect key="frame" x="20" y="15" width="374" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="s1n-je-oKq"/>
+                        </constraints>
+                        <string key="text">Отправляя заявку, Вы соглашаетесь
+на использование онлайн-сервисов</string>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="14"/>
+                        <color key="textColor" white="0.55000000000000004" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rKW-No-IKt" firstAttribute="top" secondItem="0Aa-aH-ec9" secondAttribute="top" constant="15" id="Aka-Pk-qKs"/>
+                    <constraint firstItem="y3W-IK-NPY" firstAttribute="top" secondItem="rKW-No-IKt" secondAttribute="bottom" constant="15" id="NUn-g1-Bvh"/>
+                    <constraint firstAttribute="trailing" secondItem="rKW-No-IKt" secondAttribute="trailing" constant="20" id="WXQ-sg-mTU"/>
+                    <constraint firstItem="rKW-No-IKt" firstAttribute="leading" secondItem="0Aa-aH-ec9" secondAttribute="leading" constant="20" id="ljh-HD-w9K"/>
+                    <constraint firstItem="y3W-IK-NPY" firstAttribute="leading" secondItem="0Aa-aH-ec9" secondAttribute="leading" constant="50" id="qdc-tB-Ks2"/>
+                    <constraint firstAttribute="trailing" secondItem="y3W-IK-NPY" secondAttribute="trailing" constant="50" id="rti-Rb-ifJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="728" y="-101"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="regnumCell" id="yDC-7a-o3y" customClass="AMGTableViewCell" customModule="MyAMG" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yDC-7a-o3y" id="cdh-Kb-fau">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="107.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Гос. номер" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKQ-gU-hdZ">
+                        <rect key="frame" x="20" y="0.0" width="78" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="vsb-O1-yh7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Обязательно" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="glU-Cz-Ki7">
+                        <rect key="frame" x="140" y="0.0" width="254" height="48"/>
+                        <color key="tintColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="yHo-Ed-EZ8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="16"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" autocorrectionType="no" keyboardAppearance="light" returnKeyType="done" smartInsertDeleteType="no"/>
+                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2VJ-BW-pnj">
+                        <rect key="frame" x="20" y="47" width="394" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="PwC-2X-kqL"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Укажите гос. номер" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-s3-wWB">
+                        <rect key="frame" x="20" y="56" width="113.5" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="vzK-Pg-HsN"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="DaimlerCS-Regular" family="Daimler CS" pointSize="14"/>
+                        <color key="textColor" red="0.85098039219999999" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="a2J-s3-wWB" firstAttribute="leading" secondItem="cdh-Kb-fau" secondAttribute="leading" constant="20" id="HUL-ft-ZYN"/>
+                    <constraint firstItem="JKQ-gU-hdZ" firstAttribute="leading" secondItem="cdh-Kb-fau" secondAttribute="leading" constant="20" id="ITC-Kd-oEG"/>
+                    <constraint firstItem="2VJ-BW-pnj" firstAttribute="leading" secondItem="cdh-Kb-fau" secondAttribute="leading" constant="20" id="K07-b0-9hr"/>
+                    <constraint firstItem="2VJ-BW-pnj" firstAttribute="width" secondItem="cdh-Kb-fau" secondAttribute="width" constant="-20" id="Koc-wc-J02"/>
+                    <constraint firstItem="2VJ-BW-pnj" firstAttribute="top" secondItem="JKQ-gU-hdZ" secondAttribute="bottom" constant="-1" id="Mpa-xn-7GD"/>
+                    <constraint firstItem="glU-Cz-Ki7" firstAttribute="leading" secondItem="cdh-Kb-fau" secondAttribute="leading" constant="140" id="Xof-tY-9YT"/>
+                    <constraint firstItem="a2J-s3-wWB" firstAttribute="top" secondItem="JKQ-gU-hdZ" secondAttribute="bottom" constant="8" id="dwv-pU-Rr7"/>
+                    <constraint firstItem="JKQ-gU-hdZ" firstAttribute="top" secondItem="cdh-Kb-fau" secondAttribute="top" id="hZF-lS-GBg"/>
+                    <constraint firstItem="glU-Cz-Ki7" firstAttribute="centerY" secondItem="JKQ-gU-hdZ" secondAttribute="centerY" id="ifj-eK-D78"/>
+                    <constraint firstAttribute="trailing" secondItem="glU-Cz-Ki7" secondAttribute="trailing" constant="20" id="tWS-iA-8kV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <point key="canvasLocation" x="728" y="-11"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="close" width="24" height="24"/>
+        <image name="leftArrow" width="12.5" height="21"/>
+        <image name="rightArrow" width="8" height="13"/>
+    </resources>
+</document>

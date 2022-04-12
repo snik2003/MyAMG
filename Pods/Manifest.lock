@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.8.2)
+  - FLAnimatedImage (1.0.12)
+  - SwiftyJSON (4.3.0)
+  - YandexMobileMetrica/Dynamic (3.7.1):
+    - YandexMobileMetrica/Dynamic/Core (= 3.7.1)
+    - YandexMobileMetrica/Dynamic/Crashes (= 3.7.1)
+  - YandexMobileMetrica/Dynamic/Core (3.7.1)
+  - YandexMobileMetrica/Dynamic/Crashes (3.7.1):
+    - YandexMobileMetrica/Dynamic/Core
+
+DEPENDENCIES:
+  - Alamofire (~> 4.5)
+  - FLAnimatedImage (~> 1.0)
+  - SwiftyJSON (~> 4.0)
+  - YandexMobileMetrica/Dynamic (= 3.7.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - FLAnimatedImage
+    - SwiftyJSON
+    - YandexMobileMetrica
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  YandexMobileMetrica: 95e93ee5af38520c9e470533dc8df6cf72fa171d
+
+PODFILE CHECKSUM: 82d42f1b75f5aaf056ad6ed94eb437c2728000f1
+
+COCOAPODS: 1.6.1

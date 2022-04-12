@@ -1,0 +1,1481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1709F94122ECB1B400E45F1D /* CaptureVINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1709F93F22ECB1B400E45F1D /* CaptureVINViewController.swift */; };
+		1709F94222ECB1B400E45F1D /* CaptureVINViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1709F94022ECB1B400E45F1D /* CaptureVINViewController.xib */; };
+		170F817A22DDB53C00BDB921 /* HomeTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F817922DDB53C00BDB921 /* HomeTabbarController.swift */; };
+		170F817D22DDC35D00BDB921 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F817C22DDC35D00BDB921 /* Tab1ViewController.swift */; };
+		170FF2D722E1EAE100843E3D /* MyAutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170FF2D522E1EAE100843E3D /* MyAutoViewController.swift */; };
+		170FF2D822E1EAE100843E3D /* MyAutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 170FF2D622E1EAE100843E3D /* MyAutoViewController.xib */; };
+		171AB31B22FDC97400BDA913 /* ServiceCalcOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AB31922FDC97400BDA913 /* ServiceCalcOptionsViewController.swift */; };
+		171AB31C22FDC97400BDA913 /* ServiceCalcOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 171AB31A22FDC97400BDA913 /* ServiceCalcOptionsViewController.xib */; };
+		171AB31E22FDD3FF00BDA913 /* AMGServicePriceCarResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 171AB31D22FDD3FF00BDA913 /* AMGServicePriceCarResult.swift */; };
+		171CA72A22DF1ABE00A15E28 /* API_WRAPPER.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CA72922DF1ABD00A15E28 /* API_WRAPPER.m */; };
+		171CA72E22DF261900A15E28 /* API_BASE_URL.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CA72D22DF261900A15E28 /* API_BASE_URL.m */; };
+		171CA73122DF30B400A15E28 /* MMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 171CA73022DF30B400A15E28 /* MMDevice.m */; };
+		1723730422D9FA610014A25D /* RegViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723730222D9FA610014A25D /* RegViewController.swift */; };
+		1723730522D9FA610014A25D /* RegViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1723730322D9FA610014A25D /* RegViewController.xib */; };
+		1723730A22DA2BC80014A25D /* AMGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723730922DA2BC80014A25D /* AMGButton.swift */; };
+		1723730D22DA30C70014A25D /* RestorePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1723730B22DA30C70014A25D /* RestorePasswordViewController.swift */; };
+		1723730E22DA30C70014A25D /* RestorePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1723730C22DA30C70014A25D /* RestorePasswordViewController.xib */; };
+		1736B1FC231EB1AF009969D3 /* HelloVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1736B1FA231EB1AF009969D3 /* HelloVideoViewController.swift */; };
+		1736B1FD231EB1AF009969D3 /* HelloVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1736B1FB231EB1AF009969D3 /* HelloVideoViewController.xib */; };
+		1736B1FF231EB235009969D3 /* Insta.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 1736B1FE231EB235009969D3 /* Insta.mp4 */; };
+		174875712306D1FF00DB25B4 /* MMSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 1748756F2306D1FF00DB25B4 /* MMSlider.m */; };
+		174875792306D47500DB25B4 /* MMRangeSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 174875732306D47500DB25B4 /* MMRangeSlider.m */; };
+		1748757A2306D47500DB25B4 /* handle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 174875752306D47500DB25B4 /* handle@2x.png */; };
+		1748757B2306D47500DB25B4 /* handle-hover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 174875762306D47500DB25B4 /* handle-hover@2x.png */; };
+		1748757C2306D47500DB25B4 /* bar-background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 174875772306D47500DB25B4 /* bar-background@2x.png */; };
+		1748757D2306D47500DB25B4 /* bar-highlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 174875782306D47500DB25B4 /* bar-highlight@2x.png */; };
+		1748757F2306E18800DB25B4 /* AMGSPCalculationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1748757E2306E18800DB25B4 /* AMGSPCalculationRequest.swift */; };
+		174875812306E8AA00DB25B4 /* AMGSPCalculationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174875802306E8AA00DB25B4 /* AMGSPCalculationResult.swift */; };
+		174875842306F7D900DB25B4 /* ServiceCalcResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174875822306F7D900DB25B4 /* ServiceCalcResultViewController.swift */; };
+		174875852306F7D900DB25B4 /* ServiceCalcResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 174875832306F7D900DB25B4 /* ServiceCalcResultViewController.xib */; };
+		17533DF022DA5C1A00E53C0C /* UISegmentedControl+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17533DEF22DA5C1A00E53C0C /* UISegmentedControl+extension.swift */; };
+		17533DF422DA629B00E53C0C /* AMGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17533DF322DA629B00E53C0C /* AMGTableViewCell.swift */; };
+		17533DF722DB220300E53C0C /* RegAutoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17533DF522DB220300E53C0C /* RegAutoViewController.swift */; };
+		17533DF822DB220300E53C0C /* RegAutoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17533DF622DB220300E53C0C /* RegAutoViewController.xib */; };
+		17533DFB22DB314500E53C0C /* AgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17533DF922DB314500E53C0C /* AgreementViewController.swift */; };
+		17533DFC22DB314500E53C0C /* AgreementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17533DFA22DB314500E53C0C /* AgreementViewController.xib */; };
+		17533DFE22DB3A5600E53C0C /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17533DFD22DB3A5600E53C0C /* UIView+extension.swift */; };
+		17533E0122DB422900E53C0C /* ConfirmPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17533DFF22DB422900E53C0C /* ConfirmPhoneViewController.swift */; };
+		17533E0222DB422900E53C0C /* ConfirmPhoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17533E0022DB422900E53C0C /* ConfirmPhoneViewController.xib */; };
+		1754A6C722DE4F2D00C91421 /* MMKeyChainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1754A6C622DE4F2D00C91421 /* MMKeyChainWrapper.m */; };
+		175519E722DE5BEC008F7F22 /* APIWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175519E322DE5BEC008F7F22 /* APIWrapper.swift */; };
+		175519E922DE5C12008F7F22 /* AMGAutorizationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175519E822DE5C12008F7F22 /* AMGAutorizationManager.swift */; };
+		1758470A22E78578005EDBC9 /* AMGNewsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1758470922E78578005EDBC9 /* AMGNewsManager.swift */; };
+		175AE49522E328A400F2D1CA /* TestDriveProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175AE49422E328A400F2D1CA /* TestDriveProperty.swift */; };
+		175BBE07230E7C21002C8971 /* AMGUsedFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175BBE06230E7C21002C8971 /* AMGUsedFilter.swift */; };
+		175BBE0A230E868B002C8971 /* InSaleUsedCarFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175BBE08230E868B002C8971 /* InSaleUsedCarFilterViewController.swift */; };
+		175BBE0B230E868B002C8971 /* InSaleUsedCarFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175BBE09230E868B002C8971 /* InSaleUsedCarFilterViewController.xib */; };
+		175E284722E3647000A8C3E2 /* ServiceDealerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E284522E3647000A8C3E2 /* ServiceDealerViewController.swift */; };
+		175E284822E3647000A8C3E2 /* ServiceDealerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175E284622E3647000A8C3E2 /* ServiceDealerViewController.xib */; };
+		175E284A22E3699A00A8C3E2 /* AMGShowroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E284922E3699A00A8C3E2 /* AMGShowroom.swift */; };
+		175E284D22E37A7600A8C3E2 /* MapDealerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E284B22E37A7600A8C3E2 /* MapDealerViewController.swift */; };
+		175E284E22E37A7600A8C3E2 /* MapDealerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175E284C22E37A7600A8C3E2 /* MapDealerViewController.xib */; };
+		175E285122E39AD600A8C3E2 /* ChangeDealerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E284F22E39AD600A8C3E2 /* ChangeDealerViewController.swift */; };
+		175E285222E39AD600A8C3E2 /* ChangeDealerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175E285022E39AD600A8C3E2 /* ChangeDealerViewController.xib */; };
+		175E3EE222E8551E001A3C4B /* AMGNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E3EE122E8551E001A3C4B /* AMGNews.swift */; };
+		175E3EE622E86423001A3C4B /* MainScreenNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E3EE422E86423001A3C4B /* MainScreenNewsCell.swift */; };
+		175E3EE722E86423001A3C4B /* MainScreenNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175E3EE522E86423001A3C4B /* MainScreenNewsCell.xib */; };
+		175E3EEA22E8AA66001A3C4B /* ConsentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175E3EE822E8AA66001A3C4B /* ConsentViewController.swift */; };
+		175E3EEB22E8AA66001A3C4B /* ConsentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175E3EE922E8AA66001A3C4B /* ConsentViewController.xib */; };
+		1761A92522F2F3CA00818171 /* AMGServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761A92422F2F3CA00818171 /* AMGServiceManager.swift */; };
+		1761A94822F2FD6100818171 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A92722F2FD6100818171 /* FSCalendarCollectionView.m */; };
+		1761A94922F2FD6100818171 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A92B22F2FD6100818171 /* FSCalendarDelegationProxy.m */; };
+		1761A94A22F2FD6100818171 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A92D22F2FD6100818171 /* FSCalendarDelegationFactory.m */; };
+		1761A94B22F2FD6100818171 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A93322F2FD6100818171 /* FSCalendarCell.m */; };
+		1761A94C22F2FD6100818171 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A93422F2FD6100818171 /* FSCalendarStickyHeader.m */; };
+		1761A94D22F2FD6100818171 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A93522F2FD6100818171 /* FSCalendar.m */; };
+		1761A94E22F2FD6100818171 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A93622F2FD6100818171 /* FSCalendarCollectionViewLayout.m */; };
+		1761A94F22F2FD6100818171 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A93722F2FD6100818171 /* FSCalendarScopeHandle.m */; };
+		1761A95022F2FD6100818171 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A93822F2FD6100818171 /* FSCalendarWeekdayView.m */; };
+		1761A95122F2FD6100818171 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A93C22F2FD6100818171 /* FSCalendarExtensions.m */; };
+		1761A95222F2FD6100818171 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A93E22F2FD6100818171 /* FSCalendar+Deprecated.m */; };
+		1761A95322F2FD6100818171 /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A93F22F2FD6100818171 /* FSCalendarConstants.m */; };
+		1761A95422F2FD6100818171 /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A94022F2FD6100818171 /* FSCalendarCalculator.m */; };
+		1761A95522F2FD6100818171 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A94122F2FD6100818171 /* FSCalendarHeaderView.m */; };
+		1761A95622F2FD6100818171 /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A94522F2FD6100818171 /* FSCalendarTransitionCoordinator.m */; };
+		1761A95722F2FD6100818171 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1761A94622F2FD6100818171 /* Info.plist */; };
+		1761A95822F2FD6100818171 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 1761A94722F2FD6100818171 /* FSCalendarAppearance.m */; };
+		17624345230D1D23001F144E /* InSaleCarFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17624343230D1D23001F144E /* InSaleCarFilterViewController.swift */; };
+		17624346230D1D23001F144E /* InSaleCarFilterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17624344230D1D23001F144E /* InSaleCarFilterViewController.xib */; };
+		17624348230D244C001F144E /* AMGNewFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17624347230D244C001F144E /* AMGNewFilter.swift */; };
+		1762434A230D819A001F144E /* blink.png in Resources */ = {isa = PBXBuildFile; fileRef = 17624349230D819A001F144E /* blink.png */; };
+		1762B24022F9D83100CC1A48 /* SertificatePriceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1762B23E22F9D83100CC1A48 /* SertificatePriceViewController.swift */; };
+		1762B24122F9D83100CC1A48 /* SertificatePriceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1762B23F22F9D83100CC1A48 /* SertificatePriceViewController.xib */; };
+		1763CBC722ED889F00AB5D9C /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1763CBC622ED889F00AB5D9C /* UIImage+extension.swift */; };
+		1763CBCA22ED936900AB5D9C /* MMPhotoTextRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1763CBC822ED936900AB5D9C /* MMPhotoTextRecognizer.m */; };
+		176AA55C22D9C66C00EF9636 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176AA55B22D9C66C00EF9636 /* AppDelegate.swift */; };
+		176AA55E22D9C66C00EF9636 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176AA55D22D9C66C00EF9636 /* StartViewController.swift */; };
+		176AA56122D9C66C00EF9636 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176AA55F22D9C66C00EF9636 /* Main.storyboard */; };
+		176AA56322D9C66D00EF9636 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 176AA56222D9C66D00EF9636 /* Assets.xcassets */; };
+		176AA56622D9C66D00EF9636 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 176AA56422D9C66D00EF9636 /* LaunchScreen.storyboard */; };
+		176AA57322D9CCB600EF9636 /* DaimlerCS-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 176AA57022D9CCB500EF9636 /* DaimlerCS-Regular.ttf */; };
+		176AA57422D9CCB600EF9636 /* DaimlerCS-Demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 176AA57122D9CCB500EF9636 /* DaimlerCS-Demi.ttf */; };
+		176AA57522D9CCB600EF9636 /* DaimlerCS-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 176AA57222D9CCB500EF9636 /* DaimlerCS-Light.ttf */; };
+		176AA57722D9CCDC00EF9636 /* DaimlerCA-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 176AA57622D9CCDC00EF9636 /* DaimlerCA-Regular.ttf */; };
+		176AA57C22D9EBC700EF9636 /* Loading.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 176AA57B22D9EBC700EF9636 /* Loading.mp4 */; };
+		176AA58122D9EE4500EF9636 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176AA57F22D9EE4500EF9636 /* LoginViewController.swift */; };
+		176AA58222D9EE4500EF9636 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176AA58022D9EE4500EF9636 /* LoginViewController.xib */; };
+		176AA58522D9F1B300EF9636 /* InnerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176AA58422D9F1B300EF9636 /* InnerViewController.swift */; };
+		176E5E4C22E4BDC0002CAF42 /* AMGPartSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176E5E4B22E4BDC0002CAF42 /* AMGPartSearch.swift */; };
+		176E5E4E22E4C728002CAF42 /* AMGPartsSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176E5E4D22E4C728002CAF42 /* AMGPartsSearch.swift */; };
+		176E5E5122E4D398002CAF42 /* PartDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176E5E4F22E4D398002CAF42 /* PartDetailViewController.swift */; };
+		176E5E5222E4D398002CAF42 /* PartDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176E5E5022E4D398002CAF42 /* PartDetailViewController.xib */; };
+		176E5E5522E4F119002CAF42 /* PartDealersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176E5E5322E4F119002CAF42 /* PartDealersViewController.swift */; };
+		176E5E5622E4F119002CAF42 /* PartDealersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176E5E5422E4F119002CAF42 /* PartDealersViewController.xib */; };
+		176E5E5922E593EE002CAF42 /* PartInDealerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176E5E5722E593EE002CAF42 /* PartInDealerViewController.swift */; };
+		176E5E5A22E593EE002CAF42 /* PartInDealerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 176E5E5822E593EE002CAF42 /* PartInDealerViewController.xib */; };
+		1777D3CB22F2D3EC00195CF7 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1777D3C922F2D3EC00195CF7 /* CalendarViewController.swift */; };
+		1777D3CC22F2D3EC00195CF7 /* CalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1777D3CA22F2D3EC00195CF7 /* CalendarViewController.xib */; };
+		1777D3CF22F2D62800195CF7 /* SelectManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1777D3CD22F2D62800195CF7 /* SelectManagerViewController.swift */; };
+		1777D3D022F2D62800195CF7 /* SelectManagerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1777D3CE22F2D62800195CF7 /* SelectManagerViewController.xib */; };
+		1777D3D222F2E76E00195CF7 /* AMGServiceShedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1777D3D122F2E76E00195CF7 /* AMGServiceShedule.swift */; };
+		1778C27E22F81DB1006CAF02 /* SelectSertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1778C27C22F81DB1006CAF02 /* SelectSertificateViewController.swift */; };
+		1778C27F22F81DB1006CAF02 /* SelectSertificateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1778C27D22F81DB1006CAF02 /* SelectSertificateViewController.xib */; };
+		1778C28322F8327A006CAF02 /* SertificateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1778C28122F8327A006CAF02 /* SertificateCell.swift */; };
+		1778C28422F8327A006CAF02 /* SertificateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1778C28222F8327A006CAF02 /* SertificateCell.xib */; };
+		1779CA5022E113EB002C3911 /* CarNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1779CA4E22E113EB002C3911 /* CarNameCell.swift */; };
+		1779CA5122E113EB002C3911 /* CarNameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1779CA4F22E113EB002C3911 /* CarNameCell.xib */; };
+		177B0DB222F041C700E459FC /* AMGValidationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177B0DB122F041C700E459FC /* AMGValidationResult.swift */; };
+		1783042A22FAB7F200A92BC0 /* SertificateOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1783042822FAB7F200A92BC0 /* SertificateOrderViewController.swift */; };
+		1783042B22FAB7F200A92BC0 /* SertificateOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1783042922FAB7F200A92BC0 /* SertificateOrderViewController.xib */; };
+		1787100E22DDDD080001283D /* Tab3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787100D22DDDD080001283D /* Tab3ViewController.swift */; };
+		1787101022DDDD240001283D /* Tab4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787100F22DDDD240001283D /* Tab4ViewController.swift */; };
+		1787101222DDDD3D0001283D /* Tab5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787101122DDDD3D0001283D /* Tab5ViewController.swift */; };
+		1787101622DDE39B0001283D /* ProfileMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787101422DDE39B0001283D /* ProfileMasterViewController.swift */; };
+		1787101722DDE39B0001283D /* ProfileMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1787101522DDE39B0001283D /* ProfileMasterViewController.xib */; };
+		1787101A22DDEA8E0001283D /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787101822DDEA8E0001283D /* AboutAppViewController.swift */; };
+		1787101B22DDEA8E0001283D /* AboutAppViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1787101922DDEA8E0001283D /* AboutAppViewController.xib */; };
+		1787101E22DDEDBC0001283D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787101C22DDEDBC0001283D /* SettingsViewController.swift */; };
+		1787101F22DDEDBC0001283D /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1787101D22DDEDBC0001283D /* SettingsViewController.xib */; };
+		1787102522DE04960001283D /* AMGUserCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787102422DE04960001283D /* AMGUserCar.swift */; };
+		1787102722DE09D40001283D /* AMGUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1787102622DE09D40001283D /* AMGUser.swift */; };
+		1788C8522313C34F00EDAB6B /* AMGFavouriteCars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1788C8512313C34F00EDAB6B /* AMGFavouriteCars.swift */; };
+		178A66FB22FEF65300613F0F /* AMGUserConsent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178A66FA22FEF65300613F0F /* AMGUserConsent.swift */; };
+		17A3620822F412AB0068DDAB /* MMFormPhoneTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A3620422F412AB0068DDAB /* MMFormPhoneTextField.m */; };
+		17A3620922F412AB0068DDAB /* UITextField+SelectionRanges.m in Sources */ = {isa = PBXBuildFile; fileRef = 17A3620622F412AB0068DDAB /* UITextField+SelectionRanges.m */; };
+		17AACB9123083B19001F1D56 /* AMGSPEmailOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AACB9023083B19001F1D56 /* AMGSPEmailOrder.swift */; };
+		17AACB9423086217001F1D56 /* ServiceCalcDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AACB9223086217001F1D56 /* ServiceCalcDetailViewController.swift */; };
+		17AACB9523086217001F1D56 /* ServiceCalcDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AACB9323086217001F1D56 /* ServiceCalcDetailViewController.xib */; };
+		17AACB99230978CA001F1D56 /* InSaleCarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AACB97230978CA001F1D56 /* InSaleCarListViewController.swift */; };
+		17AACB9A230978CA001F1D56 /* InSaleCarListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AACB98230978CA001F1D56 /* InSaleCarListViewController.xib */; };
+		17AACB9C2309809F001F1D56 /* AMGCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AACB9B2309809F001F1D56 /* AMGCar.swift */; };
+		17AACB9F230BD29F001F1D56 /* InSaleCarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AACB9D230BD29F001F1D56 /* InSaleCarDetailViewController.swift */; };
+		17AACBA0230BD29F001F1D56 /* InSaleCarDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AACB9E230BD29F001F1D56 /* InSaleCarDetailViewController.xib */; };
+		17AACBA3230C244D001F1D56 /* InSaleNewCarDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AACBA1230C244D001F1D56 /* InSaleNewCarDetailViewController.swift */; };
+		17AACBA4230C244D001F1D56 /* InSaleNewCarDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AACBA2230C244D001F1D56 /* InSaleNewCarDetailViewController.xib */; };
+		17ADF95922DB615300EEE58F /* AMGAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17ADF95722DB615300EEE58F /* AMGAlertController.swift */; };
+		17ADF95A22DB615300EEE58F /* AMGAlertController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17ADF95822DB615300EEE58F /* AMGAlertController.xib */; };
+		17AE041322E058B700D80220 /* AMGSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE041222E058B700D80220 /* AMGSettings.swift */; };
+		17AE041522E0716600D80220 /* AMGPushConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE041422E0716600D80220 /* AMGPushConfigurator.swift */; };
+		17AE041722E09D5200D80220 /* AMGDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE041622E09D5200D80220 /* AMGDataManager.swift */; };
+		17AE041C22E0A51C00D80220 /* AMGPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE041B22E0A51C00D80220 /* AMGPageControl.swift */; };
+		17AE041E22E0AD9600D80220 /* AMGUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE041D22E0AD9600D80220 /* AMGUserManager.swift */; };
+		17AE6E6622F964CA00255A03 /* InfoSertificateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE6E6422F964CA00255A03 /* InfoSertificateViewController.swift */; };
+		17AE6E6722F964CA00255A03 /* InfoSertificateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17AE6E6522F964CA00255A03 /* InfoSertificateViewController.xib */; };
+		17AE6E6922F98FFC00255A03 /* AMGSSOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AE6E6822F98FFC00255A03 /* AMGSSOrder.swift */; };
+		17B83588231A514D004A3572 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B83587231A514D004A3572 /* UIImageView+extension.swift */; };
+		17B8681322DBB7FC00021BAD /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17B8681222DBB7FC00021BAD /* Reachability.swift */; };
+		17BB41C122F5B9BD00969B88 /* UITableViewCell+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BB41C022F5B9BD00969B88 /* UITableViewCell+extension.swift */; };
+		17BF218422DDDA35002B12A2 /* TabItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF218322DDDA35002B12A2 /* TabItemViewController.swift */; };
+		17BF218622DDDA76002B12A2 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17BF218522DDDA76002B12A2 /* Tab2ViewController.swift */; };
+		17C2521922F4605D009B5EDD /* AMGServiceOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C2521822F4605D009B5EDD /* AMGServiceOrder.swift */; };
+		17C7329722DCB0CE00C50E9C /* String+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C7329622DCB0CE00C50E9C /* String+extension.swift */; };
+		17C9F02B22E45D3C0069125B /* ServiceOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C9F02922E45D3C0069125B /* ServiceOrderViewController.swift */; };
+		17C9F02C22E45D3C0069125B /* ServiceOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C9F02A22E45D3C0069125B /* ServiceOrderViewController.xib */; };
+		17C9F03022E494860069125B /* OrderStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C9F02E22E494860069125B /* OrderStatusViewController.swift */; };
+		17C9F03122E494860069125B /* OrderStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C9F02F22E494860069125B /* OrderStatusViewController.xib */; };
+		17C9F03522E4B0760069125B /* SearchPartsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C9F03322E4B0760069125B /* SearchPartsViewController.swift */; };
+		17C9F03622E4B0760069125B /* SearchPartsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17C9F03422E4B0760069125B /* SearchPartsViewController.xib */; };
+		17CD1CF122DC64D0001E95C8 /* ViewControllerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD1CF022DC64D0001E95C8 /* ViewControllerUtils.swift */; };
+		17CD1CF322DC7DE3001E95C8 /* UITextField+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17CD1CF222DC7DE3001E95C8 /* UITextField+extension.swift */; };
+		17D063C922DCEDDA00A31753 /* AMGObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D063C822DCEDDA00A31753 /* AMGObject.swift */; };
+		17D9650222E9DB1C00C9935F /* DeleteUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9650022E9DB1C00C9935F /* DeleteUserViewController.swift */; };
+		17D9650322E9DB1C00C9935F /* DeleteUserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D9650122E9DB1C00C9935F /* DeleteUserViewController.xib */; };
+		17D9650822E9E6C800C9935F /* SetImageToRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9650522E9E6C800C9935F /* SetImageToRow.swift */; };
+		17D9650922E9E6C800C9935F /* SetAnimatedImageToRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9650622E9E6C800C9935F /* SetAnimatedImageToRow.swift */; };
+		17D9650A22E9E6C800C9935F /* GetCacheImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9650722E9E6C800C9935F /* GetCacheImage.swift */; };
+		17D9650E22E9F55A00C9935F /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17D9650C22E9F55A00C9935F /* NewsViewController.swift */; };
+		17D9650F22E9F55A00C9935F /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17D9650D22E9F55A00C9935F /* NewsViewController.xib */; };
+		17D9651122EA0FC100C9935F /* videobg.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 17D9651022EA0FC100C9935F /* videobg.mp4 */; };
+		17DD78F322E24DA2000405D4 /* AMGTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DD78F222E24DA2000405D4 /* AMGTitleLabel.swift */; };
+		7694A03FDF6786B610C65A52 /* Pods_MyAMG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35F5C3737B98845E06BF1C2F /* Pods_MyAMG.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1709F93F22ECB1B400E45F1D /* CaptureVINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureVINViewController.swift; sourceTree = "<group>"; };
+		1709F94022ECB1B400E45F1D /* CaptureVINViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CaptureVINViewController.xib; sourceTree = "<group>"; };
+		170F817922DDB53C00BDB921 /* HomeTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTabbarController.swift; sourceTree = "<group>"; };
+		170F817C22DDC35D00BDB921 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		170FF2D522E1EAE100843E3D /* MyAutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAutoViewController.swift; sourceTree = "<group>"; };
+		170FF2D622E1EAE100843E3D /* MyAutoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyAutoViewController.xib; sourceTree = "<group>"; };
+		171AB31922FDC97400BDA913 /* ServiceCalcOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCalcOptionsViewController.swift; sourceTree = "<group>"; };
+		171AB31A22FDC97400BDA913 /* ServiceCalcOptionsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCalcOptionsViewController.xib; sourceTree = "<group>"; };
+		171AB31D22FDD3FF00BDA913 /* AMGServicePriceCarResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGServicePriceCarResult.swift; sourceTree = "<group>"; };
+		171CA72922DF1ABD00A15E28 /* API_WRAPPER.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API_WRAPPER.m; sourceTree = "<group>"; };
+		171CA72B22DF1AC400A15E28 /* API_WRAPPER.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API_WRAPPER.h; sourceTree = "<group>"; };
+		171CA72C22DF254000A15E28 /* APIEndpoints.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIEndpoints.h; sourceTree = "<group>"; };
+		171CA72D22DF261900A15E28 /* API_BASE_URL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API_BASE_URL.m; sourceTree = "<group>"; };
+		171CA72F22DF261F00A15E28 /* API_BASE_URL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API_BASE_URL.h; sourceTree = "<group>"; };
+		171CA73022DF30B400A15E28 /* MMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDevice.m; sourceTree = "<group>"; };
+		171CA73222DF30B900A15E28 /* MMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDevice.h; sourceTree = "<group>"; };
+		1723730222D9FA610014A25D /* RegViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegViewController.swift; sourceTree = "<group>"; };
+		1723730322D9FA610014A25D /* RegViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegViewController.xib; sourceTree = "<group>"; };
+		1723730922DA2BC80014A25D /* AMGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGButton.swift; sourceTree = "<group>"; };
+		1723730B22DA30C70014A25D /* RestorePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestorePasswordViewController.swift; sourceTree = "<group>"; };
+		1723730C22DA30C70014A25D /* RestorePasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestorePasswordViewController.xib; sourceTree = "<group>"; };
+		1736B1FA231EB1AF009969D3 /* HelloVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloVideoViewController.swift; sourceTree = "<group>"; };
+		1736B1FB231EB1AF009969D3 /* HelloVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelloVideoViewController.xib; sourceTree = "<group>"; };
+		1736B1FE231EB235009969D3 /* Insta.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Insta.mp4; sourceTree = "<group>"; };
+		1748756F2306D1FF00DB25B4 /* MMSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMSlider.m; sourceTree = "<group>"; };
+		174875702306D1FF00DB25B4 /* MMSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMSlider.h; sourceTree = "<group>"; };
+		174875722306D47500DB25B4 /* MMRangeSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMRangeSlider.h; sourceTree = "<group>"; };
+		174875732306D47500DB25B4 /* MMRangeSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMRangeSlider.m; sourceTree = "<group>"; };
+		174875752306D47500DB25B4 /* handle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "handle@2x.png"; sourceTree = "<group>"; };
+		174875762306D47500DB25B4 /* handle-hover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "handle-hover@2x.png"; sourceTree = "<group>"; };
+		174875772306D47500DB25B4 /* bar-background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-background@2x.png"; sourceTree = "<group>"; };
+		174875782306D47500DB25B4 /* bar-highlight@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bar-highlight@2x.png"; sourceTree = "<group>"; };
+		1748757E2306E18800DB25B4 /* AMGSPCalculationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGSPCalculationRequest.swift; sourceTree = "<group>"; };
+		174875802306E8AA00DB25B4 /* AMGSPCalculationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGSPCalculationResult.swift; sourceTree = "<group>"; };
+		174875822306F7D900DB25B4 /* ServiceCalcResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCalcResultViewController.swift; sourceTree = "<group>"; };
+		174875832306F7D900DB25B4 /* ServiceCalcResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCalcResultViewController.xib; sourceTree = "<group>"; };
+		17533DEF22DA5C1A00E53C0C /* UISegmentedControl+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISegmentedControl+extension.swift"; sourceTree = "<group>"; };
+		17533DF322DA629B00E53C0C /* AMGTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGTableViewCell.swift; sourceTree = "<group>"; };
+		17533DF522DB220300E53C0C /* RegAutoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegAutoViewController.swift; sourceTree = "<group>"; };
+		17533DF622DB220300E53C0C /* RegAutoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegAutoViewController.xib; sourceTree = "<group>"; };
+		17533DF922DB314500E53C0C /* AgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgreementViewController.swift; sourceTree = "<group>"; };
+		17533DFA22DB314500E53C0C /* AgreementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgreementViewController.xib; sourceTree = "<group>"; };
+		17533DFD22DB3A5600E53C0C /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		17533DFF22DB422900E53C0C /* ConfirmPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneViewController.swift; sourceTree = "<group>"; };
+		17533E0022DB422900E53C0C /* ConfirmPhoneViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmPhoneViewController.xib; sourceTree = "<group>"; };
+		1754A6C522DE4F2D00C91421 /* MyAMG-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MyAMG-Bridging-Header.h"; sourceTree = "<group>"; };
+		1754A6C622DE4F2D00C91421 /* MMKeyChainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMKeyChainWrapper.m; sourceTree = "<group>"; };
+		1754A6C822DE505000C91421 /* MMKeyChainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMKeyChainWrapper.h; sourceTree = "<group>"; };
+		175519E322DE5BEC008F7F22 /* APIWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIWrapper.swift; sourceTree = "<group>"; };
+		175519E822DE5C12008F7F22 /* AMGAutorizationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGAutorizationManager.swift; sourceTree = "<group>"; };
+		1758470922E78578005EDBC9 /* AMGNewsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGNewsManager.swift; sourceTree = "<group>"; };
+		175AE49422E328A400F2D1CA /* TestDriveProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDriveProperty.swift; sourceTree = "<group>"; };
+		175BBE06230E7C21002C8971 /* AMGUsedFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGUsedFilter.swift; sourceTree = "<group>"; };
+		175BBE08230E868B002C8971 /* InSaleUsedCarFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSaleUsedCarFilterViewController.swift; sourceTree = "<group>"; };
+		175BBE09230E868B002C8971 /* InSaleUsedCarFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InSaleUsedCarFilterViewController.xib; sourceTree = "<group>"; };
+		175E284522E3647000A8C3E2 /* ServiceDealerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDealerViewController.swift; sourceTree = "<group>"; };
+		175E284622E3647000A8C3E2 /* ServiceDealerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceDealerViewController.xib; sourceTree = "<group>"; };
+		175E284922E3699A00A8C3E2 /* AMGShowroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGShowroom.swift; sourceTree = "<group>"; };
+		175E284B22E37A7600A8C3E2 /* MapDealerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDealerViewController.swift; sourceTree = "<group>"; };
+		175E284C22E37A7600A8C3E2 /* MapDealerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapDealerViewController.xib; sourceTree = "<group>"; };
+		175E284F22E39AD600A8C3E2 /* ChangeDealerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDealerViewController.swift; sourceTree = "<group>"; };
+		175E285022E39AD600A8C3E2 /* ChangeDealerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeDealerViewController.xib; sourceTree = "<group>"; };
+		175E3EE122E8551E001A3C4B /* AMGNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGNews.swift; sourceTree = "<group>"; };
+		175E3EE422E86423001A3C4B /* MainScreenNewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenNewsCell.swift; sourceTree = "<group>"; };
+		175E3EE522E86423001A3C4B /* MainScreenNewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenNewsCell.xib; sourceTree = "<group>"; };
+		175E3EE822E8AA66001A3C4B /* ConsentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsentViewController.swift; sourceTree = "<group>"; };
+		175E3EE922E8AA66001A3C4B /* ConsentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConsentViewController.xib; sourceTree = "<group>"; };
+		1761A92422F2F3CA00818171 /* AMGServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGServiceManager.swift; sourceTree = "<group>"; };
+		1761A92722F2FD6100818171 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		1761A92822F2FD6100818171 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		1761A92922F2FD6100818171 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		1761A92A22F2FD6100818171 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		1761A92B22F2FD6100818171 /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		1761A92C22F2FD6100818171 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarExtensions.h; sourceTree = "<group>"; };
+		1761A92D22F2FD6100818171 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		1761A92E22F2FD6100818171 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCalculator.h; sourceTree = "<group>"; };
+		1761A92F22F2FD6100818171 /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		1761A93022F2FD6100818171 /* FSCalendarConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstants.h; sourceTree = "<group>"; };
+		1761A93122F2FD6100818171 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
+		1761A93222F2FD6100818171 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		1761A93322F2FD6100818171 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
+		1761A93422F2FD6100818171 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		1761A93522F2FD6100818171 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
+		1761A93622F2FD6100818171 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		1761A93722F2FD6100818171 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		1761A93822F2FD6100818171 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarWeekdayView.m; sourceTree = "<group>"; };
+		1761A93922F2FD6100818171 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		1761A93A22F2FD6100818171 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		1761A93B22F2FD6100818171 /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		1761A93C22F2FD6100818171 /* FSCalendarExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarExtensions.m; sourceTree = "<group>"; };
+		1761A93D22F2FD6100818171 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
+		1761A93E22F2FD6100818171 /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		1761A93F22F2FD6100818171 /* FSCalendarConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstants.m; sourceTree = "<group>"; };
+		1761A94022F2FD6100818171 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCalculator.m; sourceTree = "<group>"; };
+		1761A94122F2FD6100818171 /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		1761A94222F2FD6100818171 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		1761A94322F2FD6100818171 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
+		1761A94422F2FD6100818171 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
+		1761A94522F2FD6100818171 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
+		1761A94622F2FD6100818171 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1761A94722F2FD6100818171 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
+		17624343230D1D23001F144E /* InSaleCarFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSaleCarFilterViewController.swift; sourceTree = "<group>"; };
+		17624344230D1D23001F144E /* InSaleCarFilterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InSaleCarFilterViewController.xib; sourceTree = "<group>"; };
+		17624347230D244C001F144E /* AMGNewFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGNewFilter.swift; sourceTree = "<group>"; };
+		17624349230D819A001F144E /* blink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blink.png; sourceTree = "<group>"; };
+		1762B23E22F9D83100CC1A48 /* SertificatePriceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SertificatePriceViewController.swift; sourceTree = "<group>"; };
+		1762B23F22F9D83100CC1A48 /* SertificatePriceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SertificatePriceViewController.xib; sourceTree = "<group>"; };
+		1763CBC622ED889F00AB5D9C /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
+		1763CBC822ED936900AB5D9C /* MMPhotoTextRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPhotoTextRecognizer.m; sourceTree = "<group>"; };
+		1763CBC922ED936900AB5D9C /* MMPhotoTextRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPhotoTextRecognizer.h; sourceTree = "<group>"; };
+		176AA55822D9C66C00EF9636 /* MyAMG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAMG.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		176AA55B22D9C66C00EF9636 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		176AA55D22D9C66C00EF9636 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		176AA56022D9C66C00EF9636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		176AA56222D9C66D00EF9636 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		176AA56522D9C66D00EF9636 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		176AA56722D9C66D00EF9636 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		176AA57022D9CCB500EF9636 /* DaimlerCS-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaimlerCS-Regular.ttf"; sourceTree = "<group>"; };
+		176AA57122D9CCB500EF9636 /* DaimlerCS-Demi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaimlerCS-Demi.ttf"; sourceTree = "<group>"; };
+		176AA57222D9CCB500EF9636 /* DaimlerCS-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaimlerCS-Light.ttf"; sourceTree = "<group>"; };
+		176AA57622D9CCDC00EF9636 /* DaimlerCA-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaimlerCA-Regular.ttf"; sourceTree = "<group>"; };
+		176AA57B22D9EBC700EF9636 /* Loading.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Loading.mp4; sourceTree = "<group>"; };
+		176AA57F22D9EE4500EF9636 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		176AA58022D9EE4500EF9636 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		176AA58422D9F1B300EF9636 /* InnerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InnerViewController.swift; sourceTree = "<group>"; };
+		176E5E4B22E4BDC0002CAF42 /* AMGPartSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGPartSearch.swift; sourceTree = "<group>"; };
+		176E5E4D22E4C728002CAF42 /* AMGPartsSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGPartsSearch.swift; sourceTree = "<group>"; };
+		176E5E4F22E4D398002CAF42 /* PartDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartDetailViewController.swift; sourceTree = "<group>"; };
+		176E5E5022E4D398002CAF42 /* PartDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartDetailViewController.xib; sourceTree = "<group>"; };
+		176E5E5322E4F119002CAF42 /* PartDealersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartDealersViewController.swift; sourceTree = "<group>"; };
+		176E5E5422E4F119002CAF42 /* PartDealersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartDealersViewController.xib; sourceTree = "<group>"; };
+		176E5E5722E593EE002CAF42 /* PartInDealerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartInDealerViewController.swift; sourceTree = "<group>"; };
+		176E5E5822E593EE002CAF42 /* PartInDealerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartInDealerViewController.xib; sourceTree = "<group>"; };
+		1777D3C922F2D3EC00195CF7 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		1777D3CA22F2D3EC00195CF7 /* CalendarViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalendarViewController.xib; sourceTree = "<group>"; };
+		1777D3CD22F2D62800195CF7 /* SelectManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectManagerViewController.swift; sourceTree = "<group>"; };
+		1777D3CE22F2D62800195CF7 /* SelectManagerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectManagerViewController.xib; sourceTree = "<group>"; };
+		1777D3D122F2E76E00195CF7 /* AMGServiceShedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGServiceShedule.swift; sourceTree = "<group>"; };
+		1778C27C22F81DB1006CAF02 /* SelectSertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSertificateViewController.swift; sourceTree = "<group>"; };
+		1778C27D22F81DB1006CAF02 /* SelectSertificateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectSertificateViewController.xib; sourceTree = "<group>"; };
+		1778C28122F8327A006CAF02 /* SertificateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SertificateCell.swift; sourceTree = "<group>"; };
+		1778C28222F8327A006CAF02 /* SertificateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SertificateCell.xib; sourceTree = "<group>"; };
+		1779CA4E22E113EB002C3911 /* CarNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarNameCell.swift; sourceTree = "<group>"; };
+		1779CA4F22E113EB002C3911 /* CarNameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarNameCell.xib; sourceTree = "<group>"; };
+		177B0DB122F041C700E459FC /* AMGValidationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGValidationResult.swift; sourceTree = "<group>"; };
+		1783042822FAB7F200A92BC0 /* SertificateOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SertificateOrderViewController.swift; sourceTree = "<group>"; };
+		1783042922FAB7F200A92BC0 /* SertificateOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SertificateOrderViewController.xib; sourceTree = "<group>"; };
+		1787100D22DDDD080001283D /* Tab3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3ViewController.swift; sourceTree = "<group>"; };
+		1787100F22DDDD240001283D /* Tab4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4ViewController.swift; sourceTree = "<group>"; };
+		1787101122DDDD3D0001283D /* Tab5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab5ViewController.swift; sourceTree = "<group>"; };
+		1787101422DDE39B0001283D /* ProfileMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileMasterViewController.swift; sourceTree = "<group>"; };
+		1787101522DDE39B0001283D /* ProfileMasterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileMasterViewController.xib; sourceTree = "<group>"; };
+		1787101822DDEA8E0001283D /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		1787101922DDEA8E0001283D /* AboutAppViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutAppViewController.xib; sourceTree = "<group>"; };
+		1787101C22DDEDBC0001283D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1787101D22DDEDBC0001283D /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		1787102422DE04960001283D /* AMGUserCar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMGUserCar.swift; sourceTree = "<group>"; };
+		1787102622DE09D40001283D /* AMGUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGUser.swift; sourceTree = "<group>"; };
+		1788C8512313C34F00EDAB6B /* AMGFavouriteCars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGFavouriteCars.swift; sourceTree = "<group>"; };
+		178A66FA22FEF65300613F0F /* AMGUserConsent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGUserConsent.swift; sourceTree = "<group>"; };
+		17A3620422F412AB0068DDAB /* MMFormPhoneTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMFormPhoneTextField.m; sourceTree = "<group>"; };
+		17A3620522F412AB0068DDAB /* MMFormPhoneTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMFormPhoneTextField.h; sourceTree = "<group>"; };
+		17A3620622F412AB0068DDAB /* UITextField+SelectionRanges.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+SelectionRanges.m"; sourceTree = "<group>"; };
+		17A3620722F412AB0068DDAB /* UITextField+SelectionRanges.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+SelectionRanges.h"; sourceTree = "<group>"; };
+		17AACB9023083B19001F1D56 /* AMGSPEmailOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGSPEmailOrder.swift; sourceTree = "<group>"; };
+		17AACB9223086217001F1D56 /* ServiceCalcDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCalcDetailViewController.swift; sourceTree = "<group>"; };
+		17AACB9323086217001F1D56 /* ServiceCalcDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceCalcDetailViewController.xib; sourceTree = "<group>"; };
+		17AACB97230978CA001F1D56 /* InSaleCarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSaleCarListViewController.swift; sourceTree = "<group>"; };
+		17AACB98230978CA001F1D56 /* InSaleCarListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InSaleCarListViewController.xib; sourceTree = "<group>"; };
+		17AACB9B2309809F001F1D56 /* AMGCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGCar.swift; sourceTree = "<group>"; };
+		17AACB9D230BD29F001F1D56 /* InSaleCarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSaleCarDetailViewController.swift; sourceTree = "<group>"; };
+		17AACB9E230BD29F001F1D56 /* InSaleCarDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InSaleCarDetailViewController.xib; sourceTree = "<group>"; };
+		17AACBA1230C244D001F1D56 /* InSaleNewCarDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InSaleNewCarDetailViewController.swift; sourceTree = "<group>"; };
+		17AACBA2230C244D001F1D56 /* InSaleNewCarDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InSaleNewCarDetailViewController.xib; sourceTree = "<group>"; };
+		17ADF95722DB615300EEE58F /* AMGAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGAlertController.swift; sourceTree = "<group>"; };
+		17ADF95822DB615300EEE58F /* AMGAlertController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AMGAlertController.xib; sourceTree = "<group>"; };
+		17AE041222E058B700D80220 /* AMGSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGSettings.swift; sourceTree = "<group>"; };
+		17AE041422E0716600D80220 /* AMGPushConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGPushConfigurator.swift; sourceTree = "<group>"; };
+		17AE041622E09D5200D80220 /* AMGDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGDataManager.swift; sourceTree = "<group>"; };
+		17AE041B22E0A51C00D80220 /* AMGPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGPageControl.swift; sourceTree = "<group>"; };
+		17AE041D22E0AD9600D80220 /* AMGUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGUserManager.swift; sourceTree = "<group>"; };
+		17AE6E6422F964CA00255A03 /* InfoSertificateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoSertificateViewController.swift; sourceTree = "<group>"; };
+		17AE6E6522F964CA00255A03 /* InfoSertificateViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoSertificateViewController.xib; sourceTree = "<group>"; };
+		17AE6E6822F98FFC00255A03 /* AMGSSOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGSSOrder.swift; sourceTree = "<group>"; };
+		17B83587231A514D004A3572 /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
+		17B8681222DBB7FC00021BAD /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		17BB41C022F5B9BD00969B88 /* UITableViewCell+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+extension.swift"; sourceTree = "<group>"; };
+		17BF218322DDDA35002B12A2 /* TabItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItemViewController.swift; sourceTree = "<group>"; };
+		17BF218522DDDA76002B12A2 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		17C2521822F4605D009B5EDD /* AMGServiceOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGServiceOrder.swift; sourceTree = "<group>"; };
+		17C7329622DCB0CE00C50E9C /* String+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+extension.swift"; sourceTree = "<group>"; };
+		17C9F02922E45D3C0069125B /* ServiceOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceOrderViewController.swift; sourceTree = "<group>"; };
+		17C9F02A22E45D3C0069125B /* ServiceOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServiceOrderViewController.xib; sourceTree = "<group>"; };
+		17C9F02E22E494860069125B /* OrderStatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderStatusViewController.swift; sourceTree = "<group>"; };
+		17C9F02F22E494860069125B /* OrderStatusViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderStatusViewController.xib; sourceTree = "<group>"; };
+		17C9F03322E4B0760069125B /* SearchPartsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPartsViewController.swift; sourceTree = "<group>"; };
+		17C9F03422E4B0760069125B /* SearchPartsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchPartsViewController.xib; sourceTree = "<group>"; };
+		17CD1CF022DC64D0001E95C8 /* ViewControllerUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerUtils.swift; sourceTree = "<group>"; };
+		17CD1CF222DC7DE3001E95C8 /* UITextField+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+extension.swift"; sourceTree = "<group>"; };
+		17D063C822DCEDDA00A31753 /* AMGObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGObject.swift; sourceTree = "<group>"; };
+		17D9650022E9DB1C00C9935F /* DeleteUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserViewController.swift; sourceTree = "<group>"; };
+		17D9650122E9DB1C00C9935F /* DeleteUserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeleteUserViewController.xib; sourceTree = "<group>"; };
+		17D9650522E9E6C800C9935F /* SetImageToRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetImageToRow.swift; sourceTree = "<group>"; };
+		17D9650622E9E6C800C9935F /* SetAnimatedImageToRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetAnimatedImageToRow.swift; sourceTree = "<group>"; };
+		17D9650722E9E6C800C9935F /* GetCacheImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCacheImage.swift; sourceTree = "<group>"; };
+		17D9650C22E9F55A00C9935F /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		17D9650D22E9F55A00C9935F /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		17D9651022EA0FC100C9935F /* videobg.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = videobg.mp4; sourceTree = "<group>"; };
+		17DD78F222E24DA2000405D4 /* AMGTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AMGTitleLabel.swift; sourceTree = "<group>"; };
+		17F76BBF22DF6366004AD339 /* MyAMG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MyAMG.entitlements; sourceTree = "<group>"; };
+		31A18DDD46AFF810CD94A0C3 /* Pods-MyAMG.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAMG.debug.xcconfig"; path = "Target Support Files/Pods-MyAMG/Pods-MyAMG.debug.xcconfig"; sourceTree = "<group>"; };
+		35F5C3737B98845E06BF1C2F /* Pods_MyAMG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyAMG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0870360155C1F939CBFB547 /* Pods-MyAMG.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyAMG.release.xcconfig"; path = "Target Support Files/Pods-MyAMG/Pods-MyAMG.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		176AA55522D9C66C00EF9636 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7694A03FDF6786B610C65A52 /* Pods_MyAMG.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		170F817B22DDC33100BDB921 /* TabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				1779CA4622E0EFDF002C3911 /* CustomCells */,
+				170F817922DDB53C00BDB921 /* HomeTabbarController.swift */,
+				17BF218322DDDA35002B12A2 /* TabItemViewController.swift */,
+				170F817C22DDC35D00BDB921 /* Tab1ViewController.swift */,
+				17BF218522DDDA76002B12A2 /* Tab2ViewController.swift */,
+				1787100D22DDDD080001283D /* Tab3ViewController.swift */,
+				1787100F22DDDD240001283D /* Tab4ViewController.swift */,
+				1787101122DDDD3D0001283D /* Tab5ViewController.swift */,
+			);
+			path = TabbarController;
+			sourceTree = "<group>";
+		};
+		170FF2D422E1EAAE00843E3D /* My AMG */ = {
+			isa = PBXGroup;
+			children = (
+				170FF2D522E1EAE100843E3D /* MyAutoViewController.swift */,
+				170FF2D622E1EAE100843E3D /* MyAutoViewController.xib */,
+				1709F93F22ECB1B400E45F1D /* CaptureVINViewController.swift */,
+				1709F94022ECB1B400E45F1D /* CaptureVINViewController.xib */,
+			);
+			path = "My AMG";
+			sourceTree = "<group>";
+		};
+		171AB31822FDC92200BDA913 /* Service Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				171AB31922FDC97400BDA913 /* ServiceCalcOptionsViewController.swift */,
+				171AB31A22FDC97400BDA913 /* ServiceCalcOptionsViewController.xib */,
+				174875822306F7D900DB25B4 /* ServiceCalcResultViewController.swift */,
+				174875832306F7D900DB25B4 /* ServiceCalcResultViewController.xib */,
+				17AACB9223086217001F1D56 /* ServiceCalcDetailViewController.swift */,
+				17AACB9323086217001F1D56 /* ServiceCalcDetailViewController.xib */,
+			);
+			path = "Service Calculator";
+			sourceTree = "<group>";
+		};
+		1723730822DA2BA80014A25D /* CustomUI */ = {
+			isa = PBXGroup;
+			children = (
+				1761A92622F2FD6100818171 /* FSCalendar */,
+				1748756E2306D1D100DB25B4 /* AMGSlider */,
+				17DD78F122E24D6E000405D4 /* AMGTitleLabel */,
+				17AE041A22E0A4F100D80220 /* AMGPageControl */,
+				17ADF95622DB613000EEE58F /* AMGAlertController */,
+				17B8681622DBC76400021BAD /* AMGTableViewCell */,
+				17B8681422DBC74300021BAD /* AMGButton */,
+			);
+			path = CustomUI;
+			sourceTree = "<group>";
+		};
+		1748756E2306D1D100DB25B4 /* AMGSlider */ = {
+			isa = PBXGroup;
+			children = (
+				174875742306D47500DB25B4 /* MMRangeSlider */,
+				174875722306D47500DB25B4 /* MMRangeSlider.h */,
+				174875732306D47500DB25B4 /* MMRangeSlider.m */,
+				174875702306D1FF00DB25B4 /* MMSlider.h */,
+				1748756F2306D1FF00DB25B4 /* MMSlider.m */,
+			);
+			path = AMGSlider;
+			sourceTree = "<group>";
+		};
+		174875742306D47500DB25B4 /* MMRangeSlider */ = {
+			isa = PBXGroup;
+			children = (
+				174875752306D47500DB25B4 /* handle@2x.png */,
+				174875762306D47500DB25B4 /* handle-hover@2x.png */,
+				174875772306D47500DB25B4 /* bar-background@2x.png */,
+				174875782306D47500DB25B4 /* bar-highlight@2x.png */,
+			);
+			path = MMRangeSlider;
+			sourceTree = "<group>";
+		};
+		1754A6C022DE3D1500C91421 /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				17AE041422E0716600D80220 /* AMGPushConfigurator.swift */,
+				175519E822DE5C12008F7F22 /* AMGAutorizationManager.swift */,
+				17AE041D22E0AD9600D80220 /* AMGUserManager.swift */,
+				17AE041622E09D5200D80220 /* AMGDataManager.swift */,
+				1758470922E78578005EDBC9 /* AMGNewsManager.swift */,
+				1754A6C522DE4F2D00C91421 /* MyAMG-Bridging-Header.h */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		175E284322E363C800A8C3E2 /* ServiceContent */ = {
+			isa = PBXGroup;
+			children = (
+				175E284422E363DB00A8C3E2 /* Service */,
+				17C9F03222E4AF0C0069125B /* PartsPrice */,
+				1778C27B22F81BDA006CAF02 /* Service Sertificate */,
+				171AB31822FDC92200BDA913 /* Service Calculator */,
+				17C9F02D22E494630069125B /* OrderStatus */,
+			);
+			path = ServiceContent;
+			sourceTree = "<group>";
+		};
+		175E284422E363DB00A8C3E2 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				175E284522E3647000A8C3E2 /* ServiceDealerViewController.swift */,
+				175E284622E3647000A8C3E2 /* ServiceDealerViewController.xib */,
+				175E284B22E37A7600A8C3E2 /* MapDealerViewController.swift */,
+				175E284C22E37A7600A8C3E2 /* MapDealerViewController.xib */,
+				175E284F22E39AD600A8C3E2 /* ChangeDealerViewController.swift */,
+				175E285022E39AD600A8C3E2 /* ChangeDealerViewController.xib */,
+				17C9F02922E45D3C0069125B /* ServiceOrderViewController.swift */,
+				17C9F02A22E45D3C0069125B /* ServiceOrderViewController.xib */,
+				1777D3C922F2D3EC00195CF7 /* CalendarViewController.swift */,
+				1777D3CA22F2D3EC00195CF7 /* CalendarViewController.xib */,
+				1777D3CD22F2D62800195CF7 /* SelectManagerViewController.swift */,
+				1777D3CE22F2D62800195CF7 /* SelectManagerViewController.xib */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		175E3EE322E863F1001A3C4B /* MainScreenNewsCell */ = {
+			isa = PBXGroup;
+			children = (
+				175E3EE422E86423001A3C4B /* MainScreenNewsCell.swift */,
+				175E3EE522E86423001A3C4B /* MainScreenNewsCell.xib */,
+			);
+			path = MainScreenNewsCell;
+			sourceTree = "<group>";
+		};
+		1761A92622F2FD6100818171 /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				1761A92722F2FD6100818171 /* FSCalendarCollectionView.m */,
+				1761A92822F2FD6100818171 /* FSCalendarWeekdayView.h */,
+				1761A92922F2FD6100818171 /* FSCalendarCollectionViewLayout.h */,
+				1761A92A22F2FD6100818171 /* FSCalendarScopeHandle.h */,
+				1761A92B22F2FD6100818171 /* FSCalendarDelegationProxy.m */,
+				1761A92C22F2FD6100818171 /* FSCalendarExtensions.h */,
+				1761A92D22F2FD6100818171 /* FSCalendarDelegationFactory.m */,
+				1761A92E22F2FD6100818171 /* FSCalendarCalculator.h */,
+				1761A92F22F2FD6100818171 /* FSCalendarHeaderView.h */,
+				1761A93022F2FD6100818171 /* FSCalendarConstants.h */,
+				1761A93122F2FD6100818171 /* FSCalendarAppearance.h */,
+				1761A93222F2FD6100818171 /* FSCalendarTransitionCoordinator.h */,
+				1761A93322F2FD6100818171 /* FSCalendarCell.m */,
+				1761A93422F2FD6100818171 /* FSCalendarStickyHeader.m */,
+				1761A93522F2FD6100818171 /* FSCalendar.m */,
+				1761A93622F2FD6100818171 /* FSCalendarCollectionViewLayout.m */,
+				1761A93722F2FD6100818171 /* FSCalendarScopeHandle.m */,
+				1761A93822F2FD6100818171 /* FSCalendarWeekdayView.m */,
+				1761A93922F2FD6100818171 /* FSCalendarCollectionView.h */,
+				1761A93A22F2FD6100818171 /* FSCalendarDynamicHeader.h */,
+				1761A93B22F2FD6100818171 /* FSCalendarDelegationFactory.h */,
+				1761A93C22F2FD6100818171 /* FSCalendarExtensions.m */,
+				1761A93D22F2FD6100818171 /* FSCalendarDelegationProxy.h */,
+				1761A93E22F2FD6100818171 /* FSCalendar+Deprecated.m */,
+				1761A93F22F2FD6100818171 /* FSCalendarConstants.m */,
+				1761A94022F2FD6100818171 /* FSCalendarCalculator.m */,
+				1761A94122F2FD6100818171 /* FSCalendarHeaderView.m */,
+				1761A94222F2FD6100818171 /* FSCalendarStickyHeader.h */,
+				1761A94322F2FD6100818171 /* FSCalendar.h */,
+				1761A94422F2FD6100818171 /* FSCalendarCell.h */,
+				1761A94522F2FD6100818171 /* FSCalendarTransitionCoordinator.m */,
+				1761A94622F2FD6100818171 /* Info.plist */,
+				1761A94722F2FD6100818171 /* FSCalendarAppearance.m */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		176AA54F22D9C66C00EF9636 = {
+			isa = PBXGroup;
+			children = (
+				176AA55A22D9C66C00EF9636 /* MyAMG */,
+				176AA55922D9C66C00EF9636 /* Products */,
+				64BFE818ECDD0B28BE8E26D7 /* Pods */,
+				5687D4879CE79B91DDD1E2F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		176AA55922D9C66C00EF9636 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				176AA55822D9C66C00EF9636 /* MyAMG.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		176AA55A22D9C66C00EF9636 /* MyAMG */ = {
+			isa = PBXGroup;
+			children = (
+				17D063C722DCED9700A31753 /* Objects */,
+				1723730822DA2BA80014A25D /* CustomUI */,
+				17D9650422E9E6C800C9935F /* Images */,
+				176AA58322D9F19B00EF9636 /* Helpers */,
+				17C7329822DCD91D00C50E9C /* WebService */,
+				1754A6C022DE3D1500C91421 /* Data Manager */,
+				176AA57D22D9EDFB00EF9636 /* ViewControllers */,
+				176AA57822D9CD0900EF9636 /* Extensions */,
+				176AA56D22D9C75700EF9636 /* Resourses */,
+				17F76BBF22DF6366004AD339 /* MyAMG.entitlements */,
+				176AA55B22D9C66C00EF9636 /* AppDelegate.swift */,
+				176AA55F22D9C66C00EF9636 /* Main.storyboard */,
+				176AA56722D9C66D00EF9636 /* Info.plist */,
+			);
+			path = MyAMG;
+			sourceTree = "<group>";
+		};
+		176AA56D22D9C75700EF9636 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				17624349230D819A001F144E /* blink.png */,
+				176AA57622D9CCDC00EF9636 /* DaimlerCA-Regular.ttf */,
+				176AA57122D9CCB500EF9636 /* DaimlerCS-Demi.ttf */,
+				176AA57222D9CCB500EF9636 /* DaimlerCS-Light.ttf */,
+				176AA57022D9CCB500EF9636 /* DaimlerCS-Regular.ttf */,
+				17D9651022EA0FC100C9935F /* videobg.mp4 */,
+				176AA57B22D9EBC700EF9636 /* Loading.mp4 */,
+				1736B1FE231EB235009969D3 /* Insta.mp4 */,
+				176AA56422D9C66D00EF9636 /* LaunchScreen.storyboard */,
+				176AA56222D9C66D00EF9636 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		176AA57822D9CD0900EF9636 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17533DEF22DA5C1A00E53C0C /* UISegmentedControl+extension.swift */,
+				17533DFD22DB3A5600E53C0C /* UIView+extension.swift */,
+				17CD1CF222DC7DE3001E95C8 /* UITextField+extension.swift */,
+				17C7329622DCB0CE00C50E9C /* String+extension.swift */,
+				1763CBC622ED889F00AB5D9C /* UIImage+extension.swift */,
+				17B83587231A514D004A3572 /* UIImageView+extension.swift */,
+				17BB41C022F5B9BD00969B88 /* UITableViewCell+extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		176AA57D22D9EDFB00EF9636 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				170FF2D422E1EAAE00843E3D /* My AMG */,
+				1787101322DDE36A0001283D /* MyProfile */,
+				17D9650B22E9F53600C9935F /* AMG News */,
+				170F817B22DDC33100BDB921 /* TabbarController */,
+				176AA57E22D9EE1A00EF9636 /* LoginAndRegistration */,
+				175E284322E363C800A8C3E2 /* ServiceContent */,
+				17AACB962309788B001F1D56 /* InSale */,
+				176AA55D22D9C66C00EF9636 /* StartViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		176AA57E22D9EE1A00EF9636 /* LoginAndRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				176AA57F22D9EE4500EF9636 /* LoginViewController.swift */,
+				176AA58022D9EE4500EF9636 /* LoginViewController.xib */,
+				1723730B22DA30C70014A25D /* RestorePasswordViewController.swift */,
+				1723730C22DA30C70014A25D /* RestorePasswordViewController.xib */,
+				1723730222D9FA610014A25D /* RegViewController.swift */,
+				1723730322D9FA610014A25D /* RegViewController.xib */,
+				17533DF522DB220300E53C0C /* RegAutoViewController.swift */,
+				17533DF622DB220300E53C0C /* RegAutoViewController.xib */,
+				17533DF922DB314500E53C0C /* AgreementViewController.swift */,
+				17533DFA22DB314500E53C0C /* AgreementViewController.xib */,
+				17533DFF22DB422900E53C0C /* ConfirmPhoneViewController.swift */,
+				17533E0022DB422900E53C0C /* ConfirmPhoneViewController.xib */,
+				175E3EE822E8AA66001A3C4B /* ConsentViewController.swift */,
+				175E3EE922E8AA66001A3C4B /* ConsentViewController.xib */,
+				17D9650022E9DB1C00C9935F /* DeleteUserViewController.swift */,
+				17D9650122E9DB1C00C9935F /* DeleteUserViewController.xib */,
+				1736B1FA231EB1AF009969D3 /* HelloVideoViewController.swift */,
+				1736B1FB231EB1AF009969D3 /* HelloVideoViewController.xib */,
+			);
+			path = LoginAndRegistration;
+			sourceTree = "<group>";
+		};
+		176AA58322D9F19B00EF9636 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				17A3620522F412AB0068DDAB /* MMFormPhoneTextField.h */,
+				17A3620422F412AB0068DDAB /* MMFormPhoneTextField.m */,
+				17A3620722F412AB0068DDAB /* UITextField+SelectionRanges.h */,
+				17A3620622F412AB0068DDAB /* UITextField+SelectionRanges.m */,
+				1763CBC922ED936900AB5D9C /* MMPhotoTextRecognizer.h */,
+				1763CBC822ED936900AB5D9C /* MMPhotoTextRecognizer.m */,
+				171CA73222DF30B900A15E28 /* MMDevice.h */,
+				171CA73022DF30B400A15E28 /* MMDevice.m */,
+				17B8681222DBB7FC00021BAD /* Reachability.swift */,
+				176AA58422D9F1B300EF9636 /* InnerViewController.swift */,
+				17CD1CF022DC64D0001E95C8 /* ViewControllerUtils.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1778C27B22F81BDA006CAF02 /* Service Sertificate */ = {
+			isa = PBXGroup;
+			children = (
+				1778C28022F83255006CAF02 /* Cells */,
+				1778C27C22F81DB1006CAF02 /* SelectSertificateViewController.swift */,
+				1778C27D22F81DB1006CAF02 /* SelectSertificateViewController.xib */,
+				17AE6E6422F964CA00255A03 /* InfoSertificateViewController.swift */,
+				17AE6E6522F964CA00255A03 /* InfoSertificateViewController.xib */,
+				1762B23E22F9D83100CC1A48 /* SertificatePriceViewController.swift */,
+				1762B23F22F9D83100CC1A48 /* SertificatePriceViewController.xib */,
+				1783042822FAB7F200A92BC0 /* SertificateOrderViewController.swift */,
+				1783042922FAB7F200A92BC0 /* SertificateOrderViewController.xib */,
+			);
+			path = "Service Sertificate";
+			sourceTree = "<group>";
+		};
+		1778C28022F83255006CAF02 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1778C28122F8327A006CAF02 /* SertificateCell.swift */,
+				1778C28222F8327A006CAF02 /* SertificateCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1779CA4622E0EFDF002C3911 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				175E3EE322E863F1001A3C4B /* MainScreenNewsCell */,
+				1779CA4D22E0F02A002C3911 /* CarNameCell */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		1779CA4D22E0F02A002C3911 /* CarNameCell */ = {
+			isa = PBXGroup;
+			children = (
+				1779CA4E22E113EB002C3911 /* CarNameCell.swift */,
+				1779CA4F22E113EB002C3911 /* CarNameCell.xib */,
+			);
+			path = CarNameCell;
+			sourceTree = "<group>";
+		};
+		1787101322DDE36A0001283D /* MyProfile */ = {
+			isa = PBXGroup;
+			children = (
+				1787101422DDE39B0001283D /* ProfileMasterViewController.swift */,
+				1787101522DDE39B0001283D /* ProfileMasterViewController.xib */,
+				1787101822DDEA8E0001283D /* AboutAppViewController.swift */,
+				1787101922DDEA8E0001283D /* AboutAppViewController.xib */,
+				1787101C22DDEDBC0001283D /* SettingsViewController.swift */,
+				1787101D22DDEDBC0001283D /* SettingsViewController.xib */,
+			);
+			path = MyProfile;
+			sourceTree = "<group>";
+		};
+		17AACB962309788B001F1D56 /* InSale */ = {
+			isa = PBXGroup;
+			children = (
+				17AACB97230978CA001F1D56 /* InSaleCarListViewController.swift */,
+				17AACB98230978CA001F1D56 /* InSaleCarListViewController.xib */,
+				17AACB9D230BD29F001F1D56 /* InSaleCarDetailViewController.swift */,
+				17AACB9E230BD29F001F1D56 /* InSaleCarDetailViewController.xib */,
+				17AACBA1230C244D001F1D56 /* InSaleNewCarDetailViewController.swift */,
+				17AACBA2230C244D001F1D56 /* InSaleNewCarDetailViewController.xib */,
+				17624343230D1D23001F144E /* InSaleCarFilterViewController.swift */,
+				17624344230D1D23001F144E /* InSaleCarFilterViewController.xib */,
+				175BBE08230E868B002C8971 /* InSaleUsedCarFilterViewController.swift */,
+				175BBE09230E868B002C8971 /* InSaleUsedCarFilterViewController.xib */,
+			);
+			path = InSale;
+			sourceTree = "<group>";
+		};
+		17ADF95622DB613000EEE58F /* AMGAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				17ADF95722DB615300EEE58F /* AMGAlertController.swift */,
+				17ADF95822DB615300EEE58F /* AMGAlertController.xib */,
+			);
+			path = AMGAlertController;
+			sourceTree = "<group>";
+		};
+		17AE041A22E0A4F100D80220 /* AMGPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				17AE041B22E0A51C00D80220 /* AMGPageControl.swift */,
+			);
+			path = AMGPageControl;
+			sourceTree = "<group>";
+		};
+		17B8681422DBC74300021BAD /* AMGButton */ = {
+			isa = PBXGroup;
+			children = (
+				1723730922DA2BC80014A25D /* AMGButton.swift */,
+			);
+			path = AMGButton;
+			sourceTree = "<group>";
+		};
+		17B8681622DBC76400021BAD /* AMGTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				17533DF322DA629B00E53C0C /* AMGTableViewCell.swift */,
+			);
+			path = AMGTableViewCell;
+			sourceTree = "<group>";
+		};
+		17C7329822DCD91D00C50E9C /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				171CA72F22DF261F00A15E28 /* API_BASE_URL.h */,
+				171CA72D22DF261900A15E28 /* API_BASE_URL.m */,
+				171CA72C22DF254000A15E28 /* APIEndpoints.h */,
+				171CA72B22DF1AC400A15E28 /* API_WRAPPER.h */,
+				171CA72922DF1ABD00A15E28 /* API_WRAPPER.m */,
+				175519E322DE5BEC008F7F22 /* APIWrapper.swift */,
+				1754A6C822DE505000C91421 /* MMKeyChainWrapper.h */,
+				1754A6C622DE4F2D00C91421 /* MMKeyChainWrapper.m */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		17C9F02D22E494630069125B /* OrderStatus */ = {
+			isa = PBXGroup;
+			children = (
+				17C9F02E22E494860069125B /* OrderStatusViewController.swift */,
+				17C9F02F22E494860069125B /* OrderStatusViewController.xib */,
+			);
+			path = OrderStatus;
+			sourceTree = "<group>";
+		};
+		17C9F03222E4AF0C0069125B /* PartsPrice */ = {
+			isa = PBXGroup;
+			children = (
+				17C9F03322E4B0760069125B /* SearchPartsViewController.swift */,
+				17C9F03422E4B0760069125B /* SearchPartsViewController.xib */,
+				176E5E4F22E4D398002CAF42 /* PartDetailViewController.swift */,
+				176E5E5022E4D398002CAF42 /* PartDetailViewController.xib */,
+				176E5E5322E4F119002CAF42 /* PartDealersViewController.swift */,
+				176E5E5422E4F119002CAF42 /* PartDealersViewController.xib */,
+				176E5E5722E593EE002CAF42 /* PartInDealerViewController.swift */,
+				176E5E5822E593EE002CAF42 /* PartInDealerViewController.xib */,
+			);
+			path = PartsPrice;
+			sourceTree = "<group>";
+		};
+		17D063C722DCED9700A31753 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				1787102622DE09D40001283D /* AMGUser.swift */,
+				1787102422DE04960001283D /* AMGUserCar.swift */,
+				178A66FA22FEF65300613F0F /* AMGUserConsent.swift */,
+				1788C8512313C34F00EDAB6B /* AMGFavouriteCars.swift */,
+				17D063C822DCEDDA00A31753 /* AMGObject.swift */,
+				17AE041222E058B700D80220 /* AMGSettings.swift */,
+				175E284922E3699A00A8C3E2 /* AMGShowroom.swift */,
+				176E5E4B22E4BDC0002CAF42 /* AMGPartSearch.swift */,
+				176E5E4D22E4C728002CAF42 /* AMGPartsSearch.swift */,
+				175E3EE122E8551E001A3C4B /* AMGNews.swift */,
+				177B0DB122F041C700E459FC /* AMGValidationResult.swift */,
+				1777D3D122F2E76E00195CF7 /* AMGServiceShedule.swift */,
+				1761A92422F2F3CA00818171 /* AMGServiceManager.swift */,
+				17C2521822F4605D009B5EDD /* AMGServiceOrder.swift */,
+				17AE6E6822F98FFC00255A03 /* AMGSSOrder.swift */,
+				171AB31D22FDD3FF00BDA913 /* AMGServicePriceCarResult.swift */,
+				1748757E2306E18800DB25B4 /* AMGSPCalculationRequest.swift */,
+				174875802306E8AA00DB25B4 /* AMGSPCalculationResult.swift */,
+				17AACB9023083B19001F1D56 /* AMGSPEmailOrder.swift */,
+				17AACB9B2309809F001F1D56 /* AMGCar.swift */,
+				17624347230D244C001F144E /* AMGNewFilter.swift */,
+				175BBE06230E7C21002C8971 /* AMGUsedFilter.swift */,
+				175AE49422E328A400F2D1CA /* TestDriveProperty.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		17D9650422E9E6C800C9935F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				17D9650522E9E6C800C9935F /* SetImageToRow.swift */,
+				17D9650622E9E6C800C9935F /* SetAnimatedImageToRow.swift */,
+				17D9650722E9E6C800C9935F /* GetCacheImage.swift */,
+			);
+			name = Images;
+			path = MyAMG/Images;
+			sourceTree = SOURCE_ROOT;
+		};
+		17D9650B22E9F53600C9935F /* AMG News */ = {
+			isa = PBXGroup;
+			children = (
+				17D9650C22E9F55A00C9935F /* NewsViewController.swift */,
+				17D9650D22E9F55A00C9935F /* NewsViewController.xib */,
+			);
+			path = "AMG News";
+			sourceTree = "<group>";
+		};
+		17DD78F122E24D6E000405D4 /* AMGTitleLabel */ = {
+			isa = PBXGroup;
+			children = (
+				17DD78F222E24DA2000405D4 /* AMGTitleLabel.swift */,
+			);
+			path = AMGTitleLabel;
+			sourceTree = "<group>";
+		};
+		5687D4879CE79B91DDD1E2F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				35F5C3737B98845E06BF1C2F /* Pods_MyAMG.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		64BFE818ECDD0B28BE8E26D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31A18DDD46AFF810CD94A0C3 /* Pods-MyAMG.debug.xcconfig */,
+				D0870360155C1F939CBFB547 /* Pods-MyAMG.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		176AA55722D9C66C00EF9636 /* MyAMG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 176AA56A22D9C66D00EF9636 /* Build configuration list for PBXNativeTarget "MyAMG" */;
+			buildPhases = (
+				F89CBDA98BDDB93ED2DF9D6F /* [CP] Check Pods Manifest.lock */,
+				176AA55422D9C66C00EF9636 /* Sources */,
+				176AA55522D9C66C00EF9636 /* Frameworks */,
+				176AA55622D9C66C00EF9636 /* Resources */,
+				0D950A1C7C9403C7DBFB31CF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyAMG;
+			productName = MyAMG;
+			productReference = 176AA55822D9C66C00EF9636 /* MyAMG.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		176AA55022D9C66C00EF9636 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Mercedes-Benz Russia SAO";
+				TargetAttributes = {
+					176AA55722D9C66C00EF9636 = {
+						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
+						SystemCapabilities = {
+							com.apple.AutoFillCredentialProvider = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 176AA55322D9C66C00EF9636 /* Build configuration list for PBXProject "MyAMG" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 176AA54F22D9C66C00EF9636;
+			productRefGroup = 176AA55922D9C66C00EF9636 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				176AA55722D9C66C00EF9636 /* MyAMG */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		176AA55622D9C66C00EF9636 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17AE6E6722F964CA00255A03 /* InfoSertificateViewController.xib in Resources */,
+				1777D3D022F2D62800195CF7 /* SelectManagerViewController.xib in Resources */,
+				17533E0222DB422900E53C0C /* ConfirmPhoneViewController.xib in Resources */,
+				1778C28422F8327A006CAF02 /* SertificateCell.xib in Resources */,
+				1748757C2306D47500DB25B4 /* bar-background@2x.png in Resources */,
+				17AACB9523086217001F1D56 /* ServiceCalcDetailViewController.xib in Resources */,
+				17D9650F22E9F55A00C9935F /* NewsViewController.xib in Resources */,
+				17C9F03622E4B0760069125B /* SearchPartsViewController.xib in Resources */,
+				176AA58222D9EE4500EF9636 /* LoginViewController.xib in Resources */,
+				17624346230D1D23001F144E /* InSaleCarFilterViewController.xib in Resources */,
+				175E3EEB22E8AA66001A3C4B /* ConsentViewController.xib in Resources */,
+				1762B24122F9D83100CC1A48 /* SertificatePriceViewController.xib in Resources */,
+				1779CA5122E113EB002C3911 /* CarNameCell.xib in Resources */,
+				17533DF822DB220300E53C0C /* RegAutoViewController.xib in Resources */,
+				1736B1FD231EB1AF009969D3 /* HelloVideoViewController.xib in Resources */,
+				1736B1FF231EB235009969D3 /* Insta.mp4 in Resources */,
+				176AA56622D9C66D00EF9636 /* LaunchScreen.storyboard in Resources */,
+				1783042B22FAB7F200A92BC0 /* SertificateOrderViewController.xib in Resources */,
+				17D9651122EA0FC100C9935F /* videobg.mp4 in Resources */,
+				170FF2D822E1EAE100843E3D /* MyAutoViewController.xib in Resources */,
+				176AA57722D9CCDC00EF9636 /* DaimlerCA-Regular.ttf in Resources */,
+				17533DFC22DB314500E53C0C /* AgreementViewController.xib in Resources */,
+				1748757B2306D47500DB25B4 /* handle-hover@2x.png in Resources */,
+				17AACBA4230C244D001F1D56 /* InSaleNewCarDetailViewController.xib in Resources */,
+				175E285222E39AD600A8C3E2 /* ChangeDealerViewController.xib in Resources */,
+				175E284E22E37A7600A8C3E2 /* MapDealerViewController.xib in Resources */,
+				174875852306F7D900DB25B4 /* ServiceCalcResultViewController.xib in Resources */,
+				1723730E22DA30C70014A25D /* RestorePasswordViewController.xib in Resources */,
+				17D9650322E9DB1C00C9935F /* DeleteUserViewController.xib in Resources */,
+				17ADF95A22DB615300EEE58F /* AMGAlertController.xib in Resources */,
+				17AACBA0230BD29F001F1D56 /* InSaleCarDetailViewController.xib in Resources */,
+				176E5E5222E4D398002CAF42 /* PartDetailViewController.xib in Resources */,
+				175E3EE722E86423001A3C4B /* MainScreenNewsCell.xib in Resources */,
+				176AA56322D9C66D00EF9636 /* Assets.xcassets in Resources */,
+				1748757A2306D47500DB25B4 /* handle@2x.png in Resources */,
+				1778C27F22F81DB1006CAF02 /* SelectSertificateViewController.xib in Resources */,
+				1709F94222ECB1B400E45F1D /* CaptureVINViewController.xib in Resources */,
+				175BBE0B230E868B002C8971 /* InSaleUsedCarFilterViewController.xib in Resources */,
+				171AB31C22FDC97400BDA913 /* ServiceCalcOptionsViewController.xib in Resources */,
+				1787101F22DDEDBC0001283D /* SettingsViewController.xib in Resources */,
+				1787101B22DDEA8E0001283D /* AboutAppViewController.xib in Resources */,
+				176AA57322D9CCB600EF9636 /* DaimlerCS-Regular.ttf in Resources */,
+				1777D3CC22F2D3EC00195CF7 /* CalendarViewController.xib in Resources */,
+				17C9F03122E494860069125B /* OrderStatusViewController.xib in Resources */,
+				1723730522D9FA610014A25D /* RegViewController.xib in Resources */,
+				17C9F02C22E45D3C0069125B /* ServiceOrderViewController.xib in Resources */,
+				176AA57422D9CCB600EF9636 /* DaimlerCS-Demi.ttf in Resources */,
+				1787101722DDE39B0001283D /* ProfileMasterViewController.xib in Resources */,
+				176AA56122D9C66C00EF9636 /* Main.storyboard in Resources */,
+				175E284822E3647000A8C3E2 /* ServiceDealerViewController.xib in Resources */,
+				176E5E5622E4F119002CAF42 /* PartDealersViewController.xib in Resources */,
+				176AA57522D9CCB600EF9636 /* DaimlerCS-Light.ttf in Resources */,
+				176AA57C22D9EBC700EF9636 /* Loading.mp4 in Resources */,
+				176E5E5A22E593EE002CAF42 /* PartInDealerViewController.xib in Resources */,
+				1762434A230D819A001F144E /* blink.png in Resources */,
+				17AACB9A230978CA001F1D56 /* InSaleCarListViewController.xib in Resources */,
+				1761A95722F2FD6100818171 /* Info.plist in Resources */,
+				1748757D2306D47500DB25B4 /* bar-highlight@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D950A1C7C9403C7DBFB31CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyAMG/Pods-MyAMG-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetrica.framework",
+				"${PODS_ROOT}/YandexMobileMetrica/dynamic/YandexMobileMetricaCrashes.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetrica.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YandexMobileMetricaCrashes.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyAMG/Pods-MyAMG-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89CBDA98BDDB93ED2DF9D6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyAMG-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		176AA55422D9C66C00EF9636 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17C2521922F4605D009B5EDD /* AMGServiceOrder.swift in Sources */,
+				174875812306E8AA00DB25B4 /* AMGSPCalculationResult.swift in Sources */,
+				1787102722DE09D40001283D /* AMGUser.swift in Sources */,
+				1761A94922F2FD6100818171 /* FSCalendarDelegationProxy.m in Sources */,
+				1761A94F22F2FD6100818171 /* FSCalendarScopeHandle.m in Sources */,
+				1761A94D22F2FD6100818171 /* FSCalendar.m in Sources */,
+				1758470A22E78578005EDBC9 /* AMGNewsManager.swift in Sources */,
+				175519E922DE5C12008F7F22 /* AMGAutorizationManager.swift in Sources */,
+				1754A6C722DE4F2D00C91421 /* MMKeyChainWrapper.m in Sources */,
+				17B83588231A514D004A3572 /* UIImageView+extension.swift in Sources */,
+				174875842306F7D900DB25B4 /* ServiceCalcResultViewController.swift in Sources */,
+				1787101022DDDD240001283D /* Tab4ViewController.swift in Sources */,
+				1761A94C22F2FD6100818171 /* FSCalendarStickyHeader.m in Sources */,
+				175E284D22E37A7600A8C3E2 /* MapDealerViewController.swift in Sources */,
+				1761A95522F2FD6100818171 /* FSCalendarHeaderView.m in Sources */,
+				1762B24022F9D83100CC1A48 /* SertificatePriceViewController.swift in Sources */,
+				17AE041322E058B700D80220 /* AMGSettings.swift in Sources */,
+				1761A94822F2FD6100818171 /* FSCalendarCollectionView.m in Sources */,
+				175E3EE222E8551E001A3C4B /* AMGNews.swift in Sources */,
+				1761A94E22F2FD6100818171 /* FSCalendarCollectionViewLayout.m in Sources */,
+				17AE041522E0716600D80220 /* AMGPushConfigurator.swift in Sources */,
+				17533DF722DB220300E53C0C /* RegAutoViewController.swift in Sources */,
+				17624345230D1D23001F144E /* InSaleCarFilterViewController.swift in Sources */,
+				175AE49522E328A400F2D1CA /* TestDriveProperty.swift in Sources */,
+				1787101E22DDEDBC0001283D /* SettingsViewController.swift in Sources */,
+				176E5E5122E4D398002CAF42 /* PartDetailViewController.swift in Sources */,
+				176E5E5522E4F119002CAF42 /* PartDealersViewController.swift in Sources */,
+				17533DF022DA5C1A00E53C0C /* UISegmentedControl+extension.swift in Sources */,
+				1761A95222F2FD6100818171 /* FSCalendar+Deprecated.m in Sources */,
+				1761A95422F2FD6100818171 /* FSCalendarCalculator.m in Sources */,
+				171CA72E22DF261900A15E28 /* API_BASE_URL.m in Sources */,
+				17AE041E22E0AD9600D80220 /* AMGUserManager.swift in Sources */,
+				170FF2D722E1EAE100843E3D /* MyAutoViewController.swift in Sources */,
+				176E5E5922E593EE002CAF42 /* PartInDealerViewController.swift in Sources */,
+				175E285122E39AD600A8C3E2 /* ChangeDealerViewController.swift in Sources */,
+				17BF218622DDDA76002B12A2 /* Tab2ViewController.swift in Sources */,
+				17D9650222E9DB1C00C9935F /* DeleteUserViewController.swift in Sources */,
+				1777D3D222F2E76E00195CF7 /* AMGServiceShedule.swift in Sources */,
+				176AA58122D9EE4500EF9636 /* LoginViewController.swift in Sources */,
+				1787100E22DDDD080001283D /* Tab3ViewController.swift in Sources */,
+				17AACB9F230BD29F001F1D56 /* InSaleCarDetailViewController.swift in Sources */,
+				1777D3CB22F2D3EC00195CF7 /* CalendarViewController.swift in Sources */,
+				1787101222DDDD3D0001283D /* Tab5ViewController.swift in Sources */,
+				1787102522DE04960001283D /* AMGUserCar.swift in Sources */,
+				1761A95022F2FD6100818171 /* FSCalendarWeekdayView.m in Sources */,
+				17DD78F322E24DA2000405D4 /* AMGTitleLabel.swift in Sources */,
+				1761A92522F2F3CA00818171 /* AMGServiceManager.swift in Sources */,
+				177B0DB222F041C700E459FC /* AMGValidationResult.swift in Sources */,
+				1763CBCA22ED936900AB5D9C /* MMPhotoTextRecognizer.m in Sources */,
+				1748757F2306E18800DB25B4 /* AMGSPCalculationRequest.swift in Sources */,
+				171CA72A22DF1ABE00A15E28 /* API_WRAPPER.m in Sources */,
+				17533DFB22DB314500E53C0C /* AgreementViewController.swift in Sources */,
+				175E284722E3647000A8C3E2 /* ServiceDealerViewController.swift in Sources */,
+				17CD1CF122DC64D0001E95C8 /* ViewControllerUtils.swift in Sources */,
+				17C9F03022E494860069125B /* OrderStatusViewController.swift in Sources */,
+				17533DF422DA629B00E53C0C /* AMGTableViewCell.swift in Sources */,
+				1723730422D9FA610014A25D /* RegViewController.swift in Sources */,
+				1778C27E22F81DB1006CAF02 /* SelectSertificateViewController.swift in Sources */,
+				17C9F03522E4B0760069125B /* SearchPartsViewController.swift in Sources */,
+				17AE6E6922F98FFC00255A03 /* AMGSSOrder.swift in Sources */,
+				175E3EE622E86423001A3C4B /* MainScreenNewsCell.swift in Sources */,
+				17D9650922E9E6C800C9935F /* SetAnimatedImageToRow.swift in Sources */,
+				17AACB99230978CA001F1D56 /* InSaleCarListViewController.swift in Sources */,
+				17533DFE22DB3A5600E53C0C /* UIView+extension.swift in Sources */,
+				17AACB9C2309809F001F1D56 /* AMGCar.swift in Sources */,
+				1787101622DDE39B0001283D /* ProfileMasterViewController.swift in Sources */,
+				1778C28322F8327A006CAF02 /* SertificateCell.swift in Sources */,
+				175BBE07230E7C21002C8971 /* AMGUsedFilter.swift in Sources */,
+				17A3620822F412AB0068DDAB /* MMFormPhoneTextField.m in Sources */,
+				1761A94B22F2FD6100818171 /* FSCalendarCell.m in Sources */,
+				178A66FB22FEF65300613F0F /* AMGUserConsent.swift in Sources */,
+				17AACB9423086217001F1D56 /* ServiceCalcDetailViewController.swift in Sources */,
+				17C7329722DCB0CE00C50E9C /* String+extension.swift in Sources */,
+				176E5E4C22E4BDC0002CAF42 /* AMGPartSearch.swift in Sources */,
+				1723730A22DA2BC80014A25D /* AMGButton.swift in Sources */,
+				1787101A22DDEA8E0001283D /* AboutAppViewController.swift in Sources */,
+				17B8681322DBB7FC00021BAD /* Reachability.swift in Sources */,
+				1779CA5022E113EB002C3911 /* CarNameCell.swift in Sources */,
+				1763CBC722ED889F00AB5D9C /* UIImage+extension.swift in Sources */,
+				171CA73122DF30B400A15E28 /* MMDevice.m in Sources */,
+				170F817A22DDB53C00BDB921 /* HomeTabbarController.swift in Sources */,
+				176E5E4E22E4C728002CAF42 /* AMGPartsSearch.swift in Sources */,
+				176AA55E22D9C66C00EF9636 /* StartViewController.swift in Sources */,
+				17AE6E6622F964CA00255A03 /* InfoSertificateViewController.swift in Sources */,
+				1709F94122ECB1B400E45F1D /* CaptureVINViewController.swift in Sources */,
+				17C9F02B22E45D3C0069125B /* ServiceOrderViewController.swift in Sources */,
+				1723730D22DA30C70014A25D /* RestorePasswordViewController.swift in Sources */,
+				17BF218422DDDA35002B12A2 /* TabItemViewController.swift in Sources */,
+				17CD1CF322DC7DE3001E95C8 /* UITextField+extension.swift in Sources */,
+				175E3EEA22E8AA66001A3C4B /* ConsentViewController.swift in Sources */,
+				17ADF95922DB615300EEE58F /* AMGAlertController.swift in Sources */,
+				17D9650A22E9E6C800C9935F /* GetCacheImage.swift in Sources */,
+				17AE041722E09D5200D80220 /* AMGDataManager.swift in Sources */,
+				175BBE0A230E868B002C8971 /* InSaleUsedCarFilterViewController.swift in Sources */,
+				174875712306D1FF00DB25B4 /* MMSlider.m in Sources */,
+				1783042A22FAB7F200A92BC0 /* SertificateOrderViewController.swift in Sources */,
+				1761A95322F2FD6100818171 /* FSCalendarConstants.m in Sources */,
+				1761A95622F2FD6100818171 /* FSCalendarTransitionCoordinator.m in Sources */,
+				176AA55C22D9C66C00EF9636 /* AppDelegate.swift in Sources */,
+				17BB41C122F5B9BD00969B88 /* UITableViewCell+extension.swift in Sources */,
+				17AACB9123083B19001F1D56 /* AMGSPEmailOrder.swift in Sources */,
+				17D9650822E9E6C800C9935F /* SetImageToRow.swift in Sources */,
+				170F817D22DDC35D00BDB921 /* Tab1ViewController.swift in Sources */,
+				17AE041C22E0A51C00D80220 /* AMGPageControl.swift in Sources */,
+				17533E0122DB422900E53C0C /* ConfirmPhoneViewController.swift in Sources */,
+				17D063C922DCEDDA00A31753 /* AMGObject.swift in Sources */,
+				1761A95822F2FD6100818171 /* FSCalendarAppearance.m in Sources */,
+				175519E722DE5BEC008F7F22 /* APIWrapper.swift in Sources */,
+				17A3620922F412AB0068DDAB /* UITextField+SelectionRanges.m in Sources */,
+				1736B1FC231EB1AF009969D3 /* HelloVideoViewController.swift in Sources */,
+				1761A95122F2FD6100818171 /* FSCalendarExtensions.m in Sources */,
+				17AACBA3230C244D001F1D56 /* InSaleNewCarDetailViewController.swift in Sources */,
+				17624348230D244C001F144E /* AMGNewFilter.swift in Sources */,
+				174875792306D47500DB25B4 /* MMRangeSlider.m in Sources */,
+				171AB31B22FDC97400BDA913 /* ServiceCalcOptionsViewController.swift in Sources */,
+				1761A94A22F2FD6100818171 /* FSCalendarDelegationFactory.m in Sources */,
+				176AA58522D9F1B300EF9636 /* InnerViewController.swift in Sources */,
+				171AB31E22FDD3FF00BDA913 /* AMGServicePriceCarResult.swift in Sources */,
+				1788C8522313C34F00EDAB6B /* AMGFavouriteCars.swift in Sources */,
+				17D9650E22E9F55A00C9935F /* NewsViewController.swift in Sources */,
+				175E284A22E3699A00A8C3E2 /* AMGShowroom.swift in Sources */,
+				1777D3CF22F2D62800195CF7 /* SelectManagerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		176AA55F22D9C66C00EF9636 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				176AA56022D9C66C00EF9636 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		176AA56422D9C66D00EF9636 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				176AA56522D9C66D00EF9636 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		176AA56822D9C66D00EF9636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		176AA56922D9C66D00EF9636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		176AA56B22D9C66D00EF9636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31A18DDD46AFF810CD94A0C3 /* Pods-MyAMG.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyAMG/MyAMG.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5SWREXA683;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					"IS_SERVER_TEST=1",
+				);
+				INFOPLIST_FILE = MyAMG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.mercedes-benz.amg";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyAMG/Data Manager/MyAMG-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		176AA56C22D9C66D00EF9636 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0870360155C1F939CBFB547 /* Pods-MyAMG.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MyAMG/MyAMG.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 5SWREXA683;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = MyAMG/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.mercedes-benz.amg";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MyAMG/Data Manager/MyAMG-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		176AA55322D9C66C00EF9636 /* Build configuration list for PBXProject "MyAMG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176AA56822D9C66D00EF9636 /* Debug */,
+				176AA56922D9C66D00EF9636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		176AA56A22D9C66D00EF9636 /* Build configuration list for PBXNativeTarget "MyAMG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				176AA56B22D9C66D00EF9636 /* Debug */,
+				176AA56C22D9C66D00EF9636 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 176AA55022D9C66C00EF9636 /* Project object */;
+}
